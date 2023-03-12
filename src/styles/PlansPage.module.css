@@ -1,0 +1,126 @@
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+  margin-bottom: 8px;
+}
+
+.yearlyDiscount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #061425;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.heading {
+  font-weight: bold;
+  font-size: 26px;
+  display: inline-block;
+}
+.divider {
+  height: 1px;
+  background: #d9dde1;
+  margin: 1px 40px 21px 40px;
+}
+/* carousel */
+.planCarousel {
+  width: 1000%;
+  min-width: 500px;
+
+  display: flex;
+}
+.planCarouselContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fafafb;
+  position: relative;
+  padding: 0 40px;
+}
+.planCarouselSkeletons {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fafafb;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  height: 436px;
+}
+
+/* switch button */
+.selectorButton {
+  padding: 2px;
+  float: right;
+  width: 217px;
+  height: 44px;
+  background: #f3f4f5;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 10px;
+  margin: 0;
+  position: relative;
+}
+.sliderDiv {
+  display: inline-block;
+  padding: 8px 22px;
+  background: #ffffff;
+  width: 108px;
+  height: 40px;
+  box-shadow: 0px 0px 2px rgb(6 20 37 / 16%), 0px 1px 2px rgb(6 20 37 / 12%);
+  border-radius: 8px;
+  transition: transform 300ms;
+  z-index: 0;
+  position: absolute;
+}
+.firstOption {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  padding: 8px 22px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.secondOption {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 25px;
+  position: relative;
+  z-index: 1;
+  float: right;
+  cursor: pointer;
+}
+.SkeletonContainer {
+  min-width: 344px;
+  min-height: 436px;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 6px;
+  padding: 24px;
+  display: inline-table;
+  position: relative;
+}
+
+.Header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(239, 241, 243);
+  background: #ffffff;
+  border-bottom: 1px solid #eff1f3;
+  box-shadow: 0px 0.5px 1px rgb(6 20 37 / 5%);
+}
+.goBackButton {
+  width: 100px;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 743px) {
+  .selectorButton {
+    margin-top: 16px;
+    transition: all 0.5s;
+  }
+}

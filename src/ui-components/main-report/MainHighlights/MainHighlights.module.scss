@@ -1,0 +1,171 @@
+.MainHighlights {
+  width: 100%;
+  margin-top: 8px;
+
+  & .mainHighlightsHeader {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .mainHighlightsHeaderTitle {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  & .mainHighlightsHeaderDesc {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #334155;
+    margin-bottom: 16px;
+    padding: 0 24px;
+
+    & .desc2 {
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    & .link {
+      font-weight: 700;
+      color: #0038ff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  & :global(.ant-btn.ant-btn-primary).detailedReportbutton {
+    border-radius: 80px;
+    max-width: 327px;
+    margin: auto;
+    display: none;
+  }
+
+  & .mainHighlightsCard {
+    background: #ffffff;
+    border: 1px solid #e0e4ed;
+    box-shadow: 4px 4px 16px rgba(136, 146, 182, 0.04);
+    border-radius: 16px;
+    max-width: 327px;
+    width: 100%;
+    height: 472px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  & .issuesText {
+    font-weight: 700;
+    color: #ff2727;
+  }
+
+  & .mainHighlightIncreaseRateText {
+    font-weight: 700;
+    color: #00b047;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+    margin-left: 30px;
+
+    &::after {
+      content: "";
+      background: url("/images/increase_arrow.svg") no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: absolute;
+      top: 4px;
+      margin-right: 8px;
+      background-size: cover;
+      left: -25px;
+      top: 2px;
+    }
+
+    &::before {
+      content: "+ ";
+    }
+  }
+
+  & .mainHighlightCardHeading {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #334155;
+    text-align: center;
+  }
+
+  & .openDesktopReminder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 24px;
+
+    & .openDesktopReminderText {
+      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      text-transform: capitalize;
+    }
+
+    & .gradientText {
+      margin-left: 8px;
+      background: -webkit-linear-gradient(#f72585, #fc7932);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+
+    & .openDesktopReminder {
+      display: none;
+    }
+
+    & .mainHighlightsHeader {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #c3ccd9;
+      margin-bottom: 32px;
+    }
+
+    & .mainHighlightsHeaderTitle {
+      text-align: left;
+    }
+
+    & .mainHighlightsHeaderDesc {
+      margin: 0;
+      padding: 0;
+    }
+
+    & .mainHighlightsCard {
+      width: 100%;
+      max-width: 1224px;
+      height: 308px;
+    }
+
+    & :global(.ant-btn.ant-btn-primary).detailedReportbutton {
+      display: block;
+      margin: unset;
+    }
+
+    & .mainHighlightCardHeading,
+    & .mainHighlightIncreaseRateText {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: left;
+    }
+
+    & .mainHighlightIncreaseRateText::after {
+      width: 24px;
+      height: 24px;
+      top: 5px;
+      left: -28px;
+    }
+  }
+}

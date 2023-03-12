@@ -1,0 +1,59 @@
+.ParametersContainer {
+  .ParametersTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+
+  .ParametersDesc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #626970;
+    margin-bottom: 8px;
+    margin-top: 0.5rem;
+  }
+
+  .learnMoreBtn {
+    color: #0038ff;
+    padding: 0;
+  }
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .ParameterRadioLabel {
+    color: #061425;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ParametersRadioGroup {
+    margin-bottom: 10px;
+  }
+
+  :global {
+    .ant-input-affix-wrapper {
+      width: 175px;
+      border-radius: 5px;
+      height: 40px;
+    }
+  }
+
+  :global {
+    .sketch-picker {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .customParameterError {
+    position: relative;
+    color: red;
+    top: -20px;
+    margin-bottom: 0;
+  }
+}

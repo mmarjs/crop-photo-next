@@ -1,0 +1,39 @@
+.wrapper {
+  // padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 4px;
+  color: #061425;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #475569;
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting {
+  font-size: 16px;
+  font-weight: 600;
+  color: #061425;
+}
+
+.settingItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0px 0px;
+  gap: 4px;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 0.75rem;
+}

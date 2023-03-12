@@ -1,0 +1,57 @@
+.Wrapper {
+  height: 18px;
+  font-size: 1rem;
+  :global {
+    .ant-checkbox {
+      top: 0;
+
+      .ant-checkbox-inner {
+        width: 18px;
+        height: 18px;
+        border: 1px solid #d9dde1;
+
+        &:after {
+          top: 45%;
+          left: 25%;
+          width: 5px;
+          height: 10px;
+          transition: none;
+        }
+      }
+
+      &.ant-checkbox-checked {
+        .ant-checkbox-inner {
+          background-color: #0038ff;
+          box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+          border: none;
+
+          &:after {
+            border: 1px solid #fff;
+            border-top: 0;
+            border-left: 0;
+          }
+        }
+
+        &:after {
+          border: none;
+        }
+      }
+
+      &.ant-checkbox-indeterminate {
+        .ant-checkbox-inner {
+          background: #0038ff;
+          box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+          border: none;
+
+          &:after {
+            width: 9.3px;
+            height: 1.3px;
+            background-color: white;
+            left: 50%;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+}

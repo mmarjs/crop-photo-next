@@ -1,0 +1,174 @@
+.selectFormatContainer {
+  margin-top: 24px;
+  .label {
+    color: #061425;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .origAndCustomContainer {
+    margin-bottom: 24px;
+
+    :global {
+      .ant-row.ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .customFormatList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formatCheckbox {
+    font-size: 16px;
+    color: #061425;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  :global {
+    .ant-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .ant-checkbox-group-item {
+      margin-bottom: 5px;
+    }
+
+    .ant-checkbox {
+      top: 0;
+      &.ant-checkbox-checked {
+        .ant-checkbox-inner {
+          background-color: #0038ff;
+        }
+      }
+      .ant-checkbox-inner {
+        height: 1.125rem;
+        width: 1.125rem;
+      }
+    }
+
+    .ant-btn-text {
+      color: #0038ff;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 0;
+      max-height: 20px;
+      margin-top: 8px;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+
+    .ant-btn-text[disabled] {
+      color: rgba(0, 0, 0, 0.25);
+    }
+
+    .ant-btn-default {
+      border: none !important;
+    }
+  }
+
+  .addCustomBtn {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .formatTitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+}
+
+.customInputsContainer label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.modalTitleWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modalTitle {
+  margin-right: 0.5rem;
+}
+
+.customSizeInput {
+  max-width: 220px;
+}
+
+.customInputsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  :global {
+    .ant-row.ant-form-item {
+      margin-bottom: 0 !important;
+      height: 102px;
+    }
+  }
+}
+
+.customSizeInput {
+  max-width: 268px;
+  height: 44px;
+  margin-right: 8px;
+}
+
+.CustomInput {
+  padding: 10px 12px;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05) !important;
+  border-radius: 5px;
+  border: 1px solid #d9dde1;
+  color: #061425;
+  font-size: 16px;
+  line-height: 24px;
+  width: 12.5rem;
+  width: 258px;
+  max-width: 100%;
+
+  &:hover {
+    border: 1px solid #cbcfd3;
+  }
+
+  &:focus {
+    border: 1px solid #5177fa;
+  }
+
+  &::placeholder {
+    color: #626970;
+  }
+}
+
+.helpIcon {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.AddCustomSizeActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 24px;
+
+  .cancelBtn {
+    margin-left: 8px;
+  }
+}

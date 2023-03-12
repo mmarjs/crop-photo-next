@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+#npm run test
+npm run tsc
+node './scripts/formatter.js'
+git add $(git diff --cached --name-only --diff-filter=ACM)

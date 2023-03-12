@@ -1,0 +1,60 @@
+.ListingAnalyser {
+  padding: 64px 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & .listingAnalyserTitle {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 120%;
+    color: #061425;
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 0;
+      display: flex;
+      gap: 8px;
+    }
+
+    & .styledText {
+      background: -webkit-linear-gradient(#f72585, #fc7932);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  & .titleDescription {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: #515f70;
+    margin-bottom: 60px;
+  }
+
+  & .listingAnalyserInput {
+    & .listingAnalyserInputTitle {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    & .boldText {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    & .listingAnalyserInputDescription {
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      gap: 4px;
+    }
+
+    & .linkText {
+      font-weight: 700;
+
+      color: #063bfb;
+    }
+  }
+}

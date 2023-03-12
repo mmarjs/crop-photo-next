@@ -1,0 +1,74 @@
+.Wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #FAFAFB;
+
+  .CoverImage {
+    width: 50%;
+    min-width: 50%;
+    object-fit: cover;
+    margin-top: 4.5rem;
+    object-position: top center;
+
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .MainContent {
+    padding: 88px;
+    flex: 1;
+    background-color: #ffffff;
+    overflow-y: auto;
+
+    // @media screen and (max-width: 1199px) {
+    //   padding: 60px;
+    // }
+
+    @media screen and (max-width: 1023px) {
+      position: absolute;
+      min-width: 600px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 0.5px solid #eff1f3;
+      box-shadow: 0px 12px 16px -8px rgb(6 20 37 / 16%);
+      border-radius: 10px;
+      padding: 3rem;
+    }
+
+    .Title {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .Description {
+      margin: 8px 0 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .FormBlock {
+      margin-top: 40px;
+    }
+
+    .Divider {
+      margin: 40px 0;
+    }
+
+    &.VerticalMiddle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.logoWrapper{
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+}

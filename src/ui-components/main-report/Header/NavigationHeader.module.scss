@@ -1,0 +1,166 @@
+.NavigationHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10001;
+
+  & .mobileHeaderContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 24px;
+    height: 64px;
+    align-items: center;
+  }
+
+  & .mobileMenuContainer {
+    position: relative;
+    top: 100px;
+  }
+
+  & .headerContainer {
+    display: none;
+  }
+
+  & .mobileLogo {
+    width: 161px;
+    height: 24px;
+  }
+
+  & .burgerIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  & .closeMenuIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    & .mobileHeaderContainer {
+      display: none;
+    }
+
+    & .headerContainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 16px 24px;
+      height: 98px;
+      align-items: center;
+    }
+
+    & .headerActions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+
+    :global {
+      .ant-breadcrumb-link {
+        font-weight: 400;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #5c697b;
+      }
+
+      .ant-breadcrumb > span:last-child .ant-breadcrumb-link {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+        color: #0038ff !important;
+      }
+
+      .ant-breadcrumb-separator svg {
+        transform: rotate(180deg);
+      }
+
+      .ant-breadcrumb > span > .ant-breadcrumb-separator {
+        margin: 0;
+      }
+
+      .ant-breadcrumb > span > .ant-breadcrumb-separator svg {
+        margin: 0 10px 0 18px;
+      }
+
+      .ant-breadcrumb > span:nth-child(2) > .ant-breadcrumb-separator svg {
+        display: none;
+        margin: 0;
+      }
+
+      .ant-breadcrumb > span:nth-child(2) > .ant-breadcrumb-separator:before {
+        content: "";
+        display: inline-block;
+        background: url("/images/left-caret-blue.svg") no-repeat center;
+        background-size: contain;
+        width: 10px;
+        height: 14px;
+        position: relative;
+        top: 2px;
+        margin: 0 10px 0 18px;
+      }
+
+      .ant-btn {
+        border-radius: 80px;
+        height: 44px;
+      }
+
+      .ant-btn-default span {
+        color: #5c697b;
+      }
+    }
+  }
+}
+
+.mainReportDrawer {
+  z-index: 10002;
+  & .mobileHeaderContainer {
+    width: 100%;
+    padding-top: 10px;
+  }
+  & .mobileHeaderNavigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  & .mobileHeaderNavigation a {
+    width: 100%;
+    height: 72px;
+    padding: 0 24px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475569;
+  }
+
+  & .mobileHeaderActions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+  }
+
+  :global {
+    .ant-drawer-body {
+      padding: 0;
+    }
+
+    .ant-btn {
+      border-radius: 80px;
+      height: 54px;
+    }
+
+    .ant-btn-default span {
+      color: #5c697b;
+    }
+  }
+}

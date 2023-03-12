@@ -1,0 +1,309 @@
+.ScoreCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e0e4ed;
+  box-shadow: 4px 4px 16px rgba(136, 146, 182, 0.04);
+  border-radius: 16px;
+
+  & .scoreCardLogoContainer {
+    margin-bottom: 8px;
+  }
+
+  & .scoredCardLogo {
+    width: 28px;
+    height: 28px;
+  }
+
+  & .mainScoreCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  & .increaseRate {
+    color: #00b047;
+    position: relative;
+
+    &:before {
+      content: "+";
+    }
+
+    &:after {
+      content: "";
+      display: inline-flex;
+      background: url("/images/increase_arrow.svg") no-repeat;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 3px;
+      left: 12px;
+    }
+  }
+
+  &:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  & .scoreCardHeader {
+    margin-bottom: 16px;
+    height: fit-content;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  & .scoreCardHeaderTitle {
+    font-size: 14px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+
+  & .scoreCardHeaderSubtitle {
+    display: none;
+  }
+
+  & .scoreCardPercentage {
+    text-align: left;
+  }
+
+  & .ratingPercentText {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 16px;
+  }
+
+  & .scoreCardFooterText {
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 0;
+
+    span:last-child {
+      color: #64748b;
+      font-weight: 400;
+      font-size: 14px;
+
+      margin-bottom: 0;
+    }
+  }
+
+  & .mainScoreCard_Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    & .scoreCardLogoContainer {
+      margin-bottom: 20px;
+    }
+
+    & .scoreCardHeaderTitle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+
+    & .scoreCardHeaderSubtitle {
+      display: flex;
+      color: #5c697b;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    & .scoreCardHeader,
+    & .scoreCardHeaderSubtitle {
+      margin-bottom: 0;
+    }
+  }
+
+  & .mainScoreCard_Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    & .ratingPercentText {
+      margin-bottom: 8px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+    }
+
+    & .scoreCardFooterText {
+      flex-direction: row;
+    }
+
+    & .increaseRate:after {
+      left: -20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 225.6px;
+    height: 250px;
+    align-items: flex-start;
+    padding: 20px;
+
+    &:first-child {
+      width: 225.6px;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      height: 250px;
+    }
+
+    & .scoreCardLogoContainer {
+      margin-bottom: 24px;
+    }
+
+    & .scoredCardLogo {
+      width: 40px;
+      height: 40px;
+    }
+
+    & .scoreCardHeader {
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    & .scoreCardHeaderSubtitle {
+      display: inline-block;
+      color: #94a3b8;
+      font-size: 1rem;
+      line-height: 130%;
+    }
+
+    & .scoreCardHeaderTitle {
+      font-size: 16px;
+      line-height: 130%;
+      font-weight: 700;
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+
+    & .ratingPercentText {
+      font-size: 40px;
+      font-weight: 400;
+      color: #1e293b;
+      margin-bottom: 24px;
+    }
+
+    & .scoreCardPercentage_bold .ratingPercentText {
+      font-weight: 700;
+    }
+
+    & .scoreCardFooter span {
+      font-size: 14px;
+    }
+
+    & .scoreCardFooterText {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & .increaseRate {
+      margin-left: 20px;
+    }
+
+    & .increaseRate:after {
+      left: -20px;
+      top: 0px;
+    }
+
+    & .mainScoreCardContainer {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > div {
+        align-items: flex-start;
+      }
+
+      & .scoreCardLogoContainer {
+        margin-bottom: 24px;
+      }
+
+      & .scoreCardHeaderTitle {
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+      }
+
+      & .scoreCardHeaderSubtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #5c697b;
+        margin-bottom: 24px;
+      }
+
+      & .ratingPercentText {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.ScoreCard_shadow {
+  background: #ffffff;
+  border: 1px solid #e0e4ed;
+  box-shadow: 8px 20px 80px rgba(136, 146, 182, 0.16);
+  border-radius: 16px;
+}
+
+.ScoreCard_muted {
+  background: transparent;
+  border: 1px solid #e0e4ed;
+
+  & .scoreCardHeaderTitle {
+    color: #5c697b;
+  }
+
+  & .scoreCardHeaderSubtitle {
+    color: #94a3b8;
+  }
+
+  & .scoreCardPercentage p.ratingPercentText {
+    color: #8697ab;
+    margin-bottom: 24px;
+  }
+
+  & .scoreCardFooterMutedText {
+    color: #8697ab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 225.6px;
+
+    & .scoreCardPercentage {
+      margin-bottom: 0;
+    }
+  }
+}

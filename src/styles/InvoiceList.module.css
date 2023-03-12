@@ -1,0 +1,59 @@
+.invoiceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+
+  position: static;
+  height: 86px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+
+  border: 1px solid #eff1f3;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.invoiceTextContainer {
+  /*width: 400px;*/
+  display: inline-block;
+  float: left;
+}
+.date {
+  display: inline-block;
+  position: static;
+  height: 26px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.status {
+  display: inline-block;
+  padding: 0px 8px;
+  position: absolute;
+  height: 24px;
+  background: #eff1f3;
+  border-radius: 100px;
+  margin: 0px 8px;
+}
+.amount {
+  position: static;
+}
+.statusIcon {
+  position: static;
+  margin: 0px 4px;
+}
+.icons {
+  display: inline-block;
+  position: absolute;
+  right: 64px;
+  margin-top: 15px;
+}
+.downloadIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+.openInvoice {
+  margin-left: 37px;
+  cursor: pointer;
+  /*position: absolute;*/
+}

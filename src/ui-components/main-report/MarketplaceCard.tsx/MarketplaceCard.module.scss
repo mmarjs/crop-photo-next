@@ -1,0 +1,35 @@
+.MarketplaceCard {
+  background: #ffffff;
+  border: 1px solid #e9ebf4;
+  box-shadow: 8px 20px 80px rgba(136, 146, 182, 0.16);
+  border-radius: 16px;
+  width: 100%;
+  height: 128px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  & .marketplaceCardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  & .marketplaceCardLogo {
+    height: 22px;
+    width: auto;
+  }
+
+  & .marketplaceCardText {
+    margin-bottom: 0;
+    color: #a5b1c1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 307px;
+  }
+}

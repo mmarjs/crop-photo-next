@@ -1,0 +1,142 @@
+.cardOrange {
+  min-width: 12.125rem;
+  height: 9.5rem;
+  background: linear-gradient(32.8deg, #fba65f 13.55%, #ffcd1c 137.39%);
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2.87154px 22.9723px 28.7154px -2.87154px rgba(8, 33, 63, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 1.25rem;
+  margin-right: 2.5rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 1044.98px) {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    min-width: 50vw;
+    // border-radius: 0;
+  }
+
+  .IconAmazon {
+    margin-bottom: 1.5rem;
+  }
+
+  .marketplace {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .scoreHeading {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 130%;
+    color: #fee7cd;
+  }
+}
+
+.regularCard {
+  min-width: 11.25rem;
+  height: 8.375rem;
+  background: #fbfbfb;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2.87154px 22.9723px 28.7154px -2.87154px rgba(8, 33, 63, 0.08);
+  backdrop-filter: blur(12px);
+
+  margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  // position: relative;
+  overflow: hidden;
+
+  &.active {
+    .title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #1e293b;
+    }
+  }
+
+  .icons {
+    width: 1.5669rem;
+    height: 1.5669rem;
+    // padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 56, 255, 0.05);
+    border-radius: 50%;
+
+    margin-bottom: 0.625rem;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #94a3b8;
+  }
+
+  .scoreHeadingRegular {
+    font-weight: 400;
+    font-size: 0.6267rem;
+    line-height: 130%;
+    color: #cbd7e1;
+  }
+
+  .progressBar {
+    margin-top: auto;
+    margin-left: -0.8975rem;
+    margin-right: -0.8975rem;
+    // position: absolute;
+    // bottom: -8px;
+    // left: 0px;
+    // width: inherit;
+    margin-bottom: -0.33rem;
+    // height: 0.5rem;
+  }
+
+  .scorePercentage {
+    font-weight: 500;
+    font-size: 25.0681px;
+    margin-bottom: 0.625rem;
+  }
+
+  .scoreImprovement {
+    display: flex;
+    align-items: center;
+
+    color: #64748b;
+
+    font-weight: 400;
+    font-size: 0.5484rem;
+
+    .iconIncrease {
+      margin-right: 0.1563rem;
+    }
+
+    span {
+      color: #00b047;
+      font-weight: 600;
+      font-size: 0.5484rem;
+      line-height: 10px;
+      letter-spacing: 0.626703px;
+      margin-right: 0.3125rem;
+    }
+  }
+  @media screen and (max-width: 1044.98px) {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    min-width: 50vw;
+    // border-radius: 0;
+  }
+}
+
+// .cardBottom{
+//   background: linear-gradient(270deg, #FFCD1C -30.9%, #FFF1CE 52.93%, #FFCD1C 136.76%);
+// border-radius: 0rem 0rem 1rem 1rem;
+// width: 14.0506rem;
+// height: 2.0506rem;
+// }

@@ -1,0 +1,132 @@
+.amount {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.billSummary{
+  background: #FAFAFB;
+  margin-top: 10px;
+  padding: 10px;
+}
+.upIcon{
+  width: 12px;
+  height: 6.93px;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+.summaryHeading{
+  font-weight: 600;
+}
+.planRate{
+  flex: 30%;
+}
+.rightAlign {
+  width: 100%;
+  text-align: right;
+}
+.leftAlign {
+  width: 100%;
+  text-align: left;
+}
+.promoInput{
+  display: flex;
+}
+.addPromo{
+  margin-top: 14px;
+  width: 100px;
+}
+.promoCodeHeading{
+  display: flex;
+  cursor: pointer;
+}
+.planName{
+  flex: 30%;
+}
+.billItem{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.totalBill{
+  font-weight: 600;
+  margin-top: 16px;
+}
+.billAmountDue{
+  font-weight: 600;
+  flex: 30%;
+}
+.bottomMsg{
+  margin-top:10px;
+  font-weight: 400;
+  color: #626970;
+  font-size: 12px;
+}
+.divider{
+  height: 1px;
+  background: #D9DDE1;
+}
+.amountInputField {
+  margin: 5px;
+}
+.checkbox {
+  margin: 5px;
+  font-size: 16px;
+  color: #061425;
+}
+.checkboxSubText {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #798088;
+}
+.firstNameTitle {
+  width: 50%;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.lastNameTitle {
+  width: 50%;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.firstName {
+  margin: 5px;
+}
+.lastName {
+  margin: 5px;
+}
+.cardType {
+  display: inline-block;
+  margin: 0px 16px 21px 0px;
+}
+.cardDetail {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+}
+.cardExpiryDate {
+  font-size: 14px;
+  line-height: 20px;
+  color: #626970;
+  display: inline-block;
+}
+.update {
+  float: right;
+  overflow: hidden;
+  padding: 2px !important;
+  width: 49px !important;
+  height: fit-content !important;
+  margin: 0px;
+  min-width: 49px !important;
+}
+.buttonLabelColor {
+  color: #0038ff;
+  font-weight: 600;
+  font-size: 14px;
+}

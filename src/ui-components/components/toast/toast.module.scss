@@ -1,0 +1,58 @@
+.toastWrapper {
+  :global {
+    & .ant-message-notice-content {
+      background: #061425;
+      box-shadow: 0px 8px 16px rgba(6, 20, 37, 0.16);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      & .ant-message-custom-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .anticon {
+          position: unset;
+          margin-right: 8px;
+          font-size: 16px;
+          // color: white;
+        }
+      }
+    }
+  }
+}
+
+.successToastWrapper {
+  :global {
+    & .ant-message-notice-content {
+      background: #24bc85;
+      background-blend-mode: darken;
+      box-shadow: 0px 8px 16px rgba(6, 20, 37, 0.16);
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #061425;
+      & .ant-message-custom-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.closeIcon {
+  margin-left: 1rem !important;
+}
+
+.toastContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+}

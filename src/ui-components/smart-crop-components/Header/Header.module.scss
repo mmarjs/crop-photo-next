@@ -1,0 +1,74 @@
+.header {
+  height: 76px;
+  border-bottom: 1px solid #eff1f3;
+  background: #ffffff;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.uploadStyle {
+    justify-content: center;
+  }
+
+  .sampleImageText {
+    font-weight: 600;
+    font-size: 20px;
+    color: #061425;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .headerHelpIcon {
+    margin-left: 0.5rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0.5rem 1rem;
+
+    & .sampleImageText {
+      font-size: 12px;
+      position: relative;
+    }
+
+    & .headerHelpIcon {
+      margin-left: 0;
+      position: absolute;
+      right: -18px;
+      top: -1px;
+    }
+
+    :global(.ant-btn.ant-btn-default) {
+      padding: 0 !important;
+      height: 32px;
+    }
+  }
+
+  .iconBtn {
+    background-color: #ffffff;
+    border: none;
+    &:hover{
+      background-color: #D9DDE1;
+    }
+  }
+
+}
+
+.toolTip {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin: 8px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdownItem {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}

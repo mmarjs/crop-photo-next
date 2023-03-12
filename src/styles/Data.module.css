@@ -1,0 +1,51 @@
+.MainContent {
+  flex: 1;
+  background-color: #FAFAFB;
+}
+
+.PageBreadcrumb {
+  padding: 22px 40px;
+  width: 100%;
+  height: 76px;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+}
+
+.CardContent {
+  padding: 40px;
+}
+
+.DeleteDataDesc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #061425;
+  margin: 8px 0 0;
+}
+
+.DeleteDataNotification {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #061425;
+  margin-bottom: 8px;
+}
+
+.ResendLink {
+  margin-bottom: 16px;
+}
+
+.ResendLink a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0038FF;
+}
+
+.CustomSelector :global .ant-select-selector {
+  height: 44px !important;
+  border-radius: 5px !important;
+}
+
+.CustomSelector :global .ant-select-selector .ant-select-selection-item,
+.CustomSelector :global .ant-select-selector .ant-select-selection-placeholder {
+  line-height: 44px;
+}

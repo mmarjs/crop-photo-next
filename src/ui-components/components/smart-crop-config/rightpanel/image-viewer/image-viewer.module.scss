@@ -1,0 +1,72 @@
+.imageWrapper {
+  // flex: 1;
+  overflow: auto;
+  background: #eff1f3;
+  // justify-content: center;
+  display: inline-flex;
+  // align-items: center;
+  position: relative;
+  height: calc(100% - 70px);
+  width: 100%;
+  flex: 1;
+  .rmc-icon-container {
+    display: none !important;
+  }
+}
+
+.cropWrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  bottom: 8px;
+}
+// .cropWrapper > div > div {
+//   // background: #061425 !important;
+//   opacity: 0.7 !important;
+//   z-index: 2;
+// }
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.previewButton {
+  background: rgba(6, 20, 37, 0.5) !important;
+  border-radius: 6.25rem !important;
+  height: 1.5rem !important;
+  color: #fff !important;
+  padding: 2px 8px !important;
+  font-weight: 600;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+}
+
+.Marker {
+  position: absolute;
+  background: rgba(143, 0, 255, 0.6);
+  border: 1.5px solid #8f00ff;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.Spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.75rem;
+  font-weight: 600;
+}

@@ -1,0 +1,259 @@
+.CustomInput {
+  padding: 10px 12px;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05) !important;
+  border-radius: 5px;
+  border: 1px solid #d9dde1;
+  color: #061425;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    border: 1px solid #cbcfd3;
+  }
+
+  &:focus {
+    border: 1px solid #5177fa;
+  }
+
+  &::placeholder {
+    color: #626970;
+  }
+}
+
+.inputBox {
+  width: 100%;
+
+  &:global(.ant-input) {
+    @extend .CustomInput;
+  }
+
+  &:global(.ant-input-affix-wrapper) {
+    padding: 10px 12px;
+    border: none;
+    box-shadow: none;
+  }
+
+  &:global(.ant-input-affix-wrapper > input.ant-input) {
+    margin: -10px -12px -10px -12px;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    @extend .CustomInput;
+
+    &:hover {
+      border: 1px solid #cbcfd3;
+    }
+
+    &:focus {
+      border: 1px solid #5177fa;
+    }
+
+    &::placeholder {
+      color: #626970;
+    }
+  }
+
+  &:global(.ant-input-affix-wrapper .ant-input-suffix) {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+  }
+
+  &:global(.ant-input-affix-wrapper input[type="password"] + .ant-input-suffix .ant-input-password-icon) {
+    color: #798088;
+  }
+
+  &:global(.ant-input-affix-wrapper input[type="text"] + .ant-input-suffix .ant-input-password-icon) {
+    color: #061425;
+  }
+
+  &.InputNotValid {
+    &:global(.ant-input),
+    &:global(.ant-input-affix-wrapper > input.ant-input) {
+      border-color: #c5030f;
+
+      &:hover,
+      &:focus {
+        border-color: #c5030f;
+      }
+    }
+
+    &:global(.ant-input-affix-wrapper input[type="password"] + .ant-input-suffix .ant-input-password-icon),
+    &:global(.ant-input-affix-wrapper input[type="text"] + .ant-input-suffix .ant-input-password-icon) {
+      color: #c5030f;
+    }
+  }
+}
+
+.InputWithLabel {
+  margin-top: 8px;
+}
+
+.inputBoxDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.inputBoxLink {
+  float: right;
+  text-align: right;
+  color: #0038ff !important;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-appearance: none !important;
+}
+
+.inputBoxLabelDiv {
+  width: 100%;
+}
+
+.ValidationWrapper {
+  position: relative;
+
+  .ValidationError {
+    color: #c5030f;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+  }
+
+  .Popup {
+    list-style: none;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border: 0.5px solid #eff1f3;
+    box-shadow: 0px 12px 16px -8px rgb(6 20 37 / 16%);
+    border-radius: 8px;
+    padding: 10px 38px 10px 14px;
+
+    li {
+      color: #061425;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+
+      .CheckIcon {
+        margin-right: 5px;
+        color: #798088;
+
+        &.ValidationPassed {
+          color: #26a659;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.urlInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  max-width: 327px;
+  height: fit-content;
+  border-radius: 80px;
+  min-height: 90px;
+
+  & .inputBoxDiv {
+    position: relative;
+    background-color: #fff;
+    border-radius: 80px;
+  }
+
+  :global {
+    & .ant-input {
+      background: #ffffff;
+      border-radius: 80px;
+      gap: 8px;
+      z-index: 9;
+      border: 1px solid rgba(13, 48, 253, 0.1) !important;
+      min-height: 54px;
+
+      &::placeholder {
+        color: #8697ab;
+        font-weight: 400;
+      }
+    }
+
+    & .ant-btn.ant-btn-primary {
+      position: absolute;
+      right: 1px;
+      background: #0038ff;
+      border-radius: 80px;
+      border: 2px solid #ffffff;
+      height: 50px;
+      padding: 12px 20px;
+      gap: 10px;
+      display: flex;
+      z-index: 10;
+
+      &:disabled {
+        background: #94a3b8;
+      }
+    }
+
+    & .ant-input:focus + .ant-btn.ant-btn-primary {
+      border: 2px solid #ffffff;
+    }
+  }
+
+  & .urlInputWrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 80px;
+    background: #fff;
+
+    &.hasValue {
+      border: none;
+    }
+
+    &.hasValue :global(.ant-input) {
+      border: 2px solid #f5f4ff !important;
+    }
+
+    &.isValid {
+      border: none;
+      box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 3px rgba(13, 48, 253, 0.3),
+        16px 16px 250px rgba(166, 196, 255, 0.08), 40px 40px 160px rgba(94, 102, 131, 0.25) !important;
+    }
+
+    &.hasError {
+      border: none;
+      box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 3px rgba(253, 13, 13, 0.3),
+        16px 16px 250px rgba(166, 196, 255, 0.08), 40px 40px 160px rgba(94, 102, 131, 0.25) !important;
+    }
+  }
+
+  & .errorMessage {
+    color: #ff2727;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 800px;
+
+    & .errorMessage {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.Wrapper {
+  background-color: #fafafb;
+  height: calc(100vh - 76px);
+  padding: 34px 32px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.MediaGallery {
+  margin: 22px -32px 0;
+  padding-left: 32px;
+
+  > div {
+    width: calc((100% - 160px) / 5);
+  }
+}
+
+.DownloadText {
+  font-size: 16px;
+  line-height: 24px;
+  color: #061425;
+  margin: 0;
+}
+
+.downloadingButton {
+  width: 200px;
+}
+
+.LargePreviewWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}

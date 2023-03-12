@@ -1,0 +1,30 @@
+.cardType {
+	display: inline-block;
+	margin: 0px 16px 21px 0px;
+}
+.cardDetail {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px;
+}
+.cardExpiryDate {
+	font-size: 14px;
+	line-height: 20px;
+	color: #626970;
+	display: inline-block;
+}
+.update {
+	 float: right;
+	 overflow: hidden;
+	 padding: 2px !important;
+	 width: 49px !important;
+	 height: fit-content !important;
+	 margin: 0px;
+	 min-width: 49px !important;
+ }
+.buttonLabelColor {
+	color: #0038ff;
+	font-weight: 600;
+	font-size: 14px;
+}

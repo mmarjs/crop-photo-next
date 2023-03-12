@@ -1,0 +1,361 @@
+{
+  "final_report": [
+    {
+      "image_key": "qc/private/_job_id/3719114c-a60a-4436-a1c4-148c4804d0a5/input/images/MAIN",
+      "report": [
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "max_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_dpi",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "allowed_image_format",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "use_sRGB_color_profile",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "aspect_ratio",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "product_fill",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "proper_lighting",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "white_background",
+          "image_type": "MAIN",
+          "result": false
+        },
+        {
+          "guideline_category": "Site Standards",
+          "compliance_level": "Must Meet",
+          "name": "product_category_match",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Main Image Standards",
+          "compliance_level": "Must Meet",
+          "name": "single_product_in_multipack",
+          "image_type": "MAIN",
+          "result": false
+        },
+        {
+          "guideline_category": "Main Image Standards",
+          "compliance_level": "Must Meet",
+          "name": "no_logo_text_graphics",
+          "image_type": "MAIN",
+          "result": false
+        },
+        {
+          "guideline_category": "Main Image Standards",
+          "compliance_level": "Must Meet",
+          "name": "no_promo_text",
+          "image_type": "MAIN",
+          "result": false
+        },
+        {
+          "guideline_category": "Prohibited Content",
+          "compliance_level": "Must Meet",
+          "name": "no_nudity",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "File Naming Standards",
+          "compliance_level": "Must Meet",
+          "name": "proper_file_name",
+          "image_type": "all",
+          "result": false
+        }
+      ]
+    },
+    {
+      "image_key": "qc/private/_job_id/3719114c-a60a-4436-a1c4-148c4804d0a5/input/images/VARIANT1",
+      "report": [
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "max_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_dpi",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "allowed_image_format",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "use_sRGB_color_profile",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "aspect_ratio",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "product_fill",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "proper_lighting",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Site Standards",
+          "compliance_level": "Must Meet",
+          "name": "product_category_match",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Prohibited Content",
+          "compliance_level": "Must Meet",
+          "name": "no_nudity",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "File Naming Standards",
+          "compliance_level": "Must Meet",
+          "name": "proper_file_name",
+          "image_type": "all",
+          "result": false
+        }
+      ]
+    },
+    {
+      "image_key": "qc/private/_job_id/3719114c-a60a-4436-a1c4-148c4804d0a5/input/images/VARIANT2",
+      "report": [
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "max_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_dpi",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "allowed_image_format",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "use_sRGB_color_profile",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "aspect_ratio",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "product_fill",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "proper_lighting",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Site Standards",
+          "compliance_level": "Must Meet",
+          "name": "product_category_match",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Prohibited Content",
+          "compliance_level": "Must Meet",
+          "name": "no_nudity",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "File Naming Standards",
+          "compliance_level": "Must Meet",
+          "name": "proper_file_name",
+          "image_type": "all",
+          "result": false
+        }
+      ]
+    },
+    {
+      "image_key": "qc/private/_job_id/3719114c-a60a-4436-a1c4-148c4804d0a5/input/images/VARIANT3",
+      "report": [
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "max_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_image_size",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "min_dpi",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "allowed_image_format",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "use_sRGB_color_profile",
+          "image_type": "all",
+          "result": true
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "aspect_ratio",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "product_fill",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Technical Requirements",
+          "compliance_level": "Must Meet",
+          "name": "proper_lighting",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Site Standards",
+          "compliance_level": "Must Meet",
+          "name": "product_category_match",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "Prohibited Content",
+          "compliance_level": "Must Meet",
+          "name": "no_nudity",
+          "image_type": "all",
+          "result": false
+        },
+        {
+          "guideline_category": "File Naming Standards",
+          "compliance_level": "Must Meet",
+          "name": "proper_file_name",
+          "image_type": "all",
+          "result": false
+        }
+      ]
+    }
+  ],
+  "job_id": "3719114c-a60a-4436-a1c4-148c4804d0a5"
+}

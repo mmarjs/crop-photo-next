@@ -1,0 +1,134 @@
+.Wrapper {
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+}
+
+.Banner {
+  background-color: #fdbe1b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.SelectedImage {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  background-color: #fafafb;
+  text-align: center;
+
+  :global {
+    .ant-image-img {
+      display: unset;
+      width: auto;
+    }
+  }
+}
+
+.AlignCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Marker {
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(143, 0, 255, 0.6);
+  border: 1.5px solid #8f00ff;
+  z-index: 1;
+}
+
+.BottomNav {
+  padding-bottom: 12px;
+  border: 1px solid #eff1f3;
+  position: relative;
+}
+
+.BottomNavHeader {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SliderContainer {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  :global {
+    .ant-slider {
+      width: 120px;
+
+      .ant-slider-rail,
+      .ant-slider-track {
+        display: none;
+      }
+
+      .ant-slider-step {
+        background: #eff1f3;
+        height: 2px;
+      }
+
+      .ant-slider-handle {
+        width: 16px;
+        height: 16px;
+        border: 0px;
+        background-color: #0038ff;
+        margin-top: -7px;
+      }
+    }
+  }
+}
+
+.ImageName {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.ArrowButtons {
+  display: flex;
+  button:first-child {
+    margin-right: 8px;
+  }
+}
+
+.Gallery {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  min-height: 100px;
+}
+
+.GalleryItem {
+  margin-left: 12px;
+  box-sizing: content-box;
+}
+
+.CurrentItem {
+  border: 2px solid #0038ff;
+}
+
+.ScrollToNext {
+  position: absolute;
+  right: 24px;
+  bottom: 42px;
+}

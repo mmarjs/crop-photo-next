@@ -1,0 +1,56 @@
+.StickyCallToAction {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 86px;
+  background-color: #fff;
+  z-index: 150;
+
+  & .gradientBackground {
+    height: 100%;
+    width: 100%;
+    background: rgb(81, 118, 250);
+    background: linear-gradient(
+      90deg,
+      rgba(81, 118, 250, 0.25) 7%,
+      rgba(201, 65, 249, 0.25) 26%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 31, 0, 0.25) 76%,
+      rgba(204, 11, 236, 0.16) 99%
+    );
+    display: flex;
+    gap: 42.92px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .stickyTitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+  }
+
+  & .gradientText {
+    background: -webkit-linear-gradient(#43baf9, #437cf1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .emailInputContainer {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    gap: 18px;
+    color: #061425;
+  }
+
+  & .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

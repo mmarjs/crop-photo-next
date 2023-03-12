@@ -1,0 +1,227 @@
+/* new billing page */
+.planStatusContainer {
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  padding: 1.375rem 2.5rem;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.planStatus {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  display: inline-block;
+}
+.planRate {
+  font-weight: normal;
+  font-size: 16px;
+}
+.changePlan {
+  /* float: right;
+  overflow: hidden; */
+}
+.planUpdateContainer {
+  /* height: 102px; */
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  padding: 1.375rem 2.5rem;
+  /* margin: 45px 40px 0px 40px; */
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 6px;
+  margin-bottom: 3rem;
+}
+.balanceContainer {
+  /* width: 240px; */
+  /* display: inline-block; */
+}
+.balanceTitle {
+  font-size: 14px;
+  color: #626970;
+  margin: 0px;
+}
+.balance {
+  font-weight: bold;
+  font-size: 22px;
+  display: inline-block;
+  margin: 0;
+  margin-right: 8px;
+}
+.cardExpiryDate {
+  font-size: 14px;
+  line-height: 20px;
+  color: #626970;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.addCredits {
+  display: inline-block;
+  padding: 0 !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  margin: 0px;
+  min-width: 75px !important;
+}
+.buttonLabelColor {
+  color: #0038ff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.helpIcon {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.cardDetail {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+}
+.removeCardButton {
+  overflow: hidden;
+  padding: 0 !important;
+  //display: inline-block;
+  height: fit-content !important;
+  display: block;
+}
+.update {
+  /* float: right; */
+  overflow: hidden;
+  padding: 0 !important;
+  display: inline-block;
+  // width: 49px !important;
+  height: fit-content !important;
+  // margin: 0px;
+  // min-width: 49px !important;
+}
+.recieptHeading {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 1rem;
+}
+.divider {
+  height: 1px;
+  background: #d9dde1;
+}
+.receiptContainer {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.cardType {
+  /* display: inline-block;
+  margin: 0px 16px 21px 0px; */
+  margin-right: 1rem;
+  width: 4rem;
+}
+.cardDetailsCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.receiptInfo {
+  font-size: 16px;
+}
+.viewReceipt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0038ff;
+  cursor: pointer;
+  float: right;
+}
+.recieptAmount {
+  font-size: 16px;
+  float: right;
+}
+.useDifferentCard {
+}
+
+.learnMore {
+  color: #0038ff;
+  padding: 0px;
+  display: block;
+}
+.creditsAmount {
+  margin: 20px 0px 8px 0px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Header {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  padding-left: 2.5rem;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(239, 241, 243);
+  background: #ffffff;
+  border-bottom: 1px solid #eff1f3;
+  box-shadow: 0px 0.5px 1px rgb(6 20 37 / 5%);
+}
+.existingCardDetails {
+  margin-top: 2rem;
+}
+
+.cardDetailsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // justify-content: flex-end;
+}
+
+.billingWrapper {
+  padding: 2.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 76px);
+}
+.recieptSkeleton {
+  margin-top: 1.5rem;
+}
+.receiptHeaderContainer {
+  margin-bottom: 0.25rem;
+  background: #e5e5e5;
+  border: 1px solid #eff1f3;
+  padding: 12px 16px 12px 16px;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 6px;
+  font-weight: 600;
+  min-width: 50rem;
+}
+.recieptHeaderInfo {
+  font-size: 1rem;
+}
+
+.noReceipt {
+  margin-top: 1rem;
+}
+
+.addCreditErrorTextDiv {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: red;
+}
+
+.AddCreditModalInput {
+  background: #ffffff;
+  border: 0.5px solid #d9dde1;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 5px;
+  height: 44px;
+  font-size: 1rem;
+}
+
+.AddCreditModalInputLabel {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0.5rem;
+}

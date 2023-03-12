@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "logging": {
+    "datadog": {
+      "enabled": true,
+      "xyz": "abc"
+    },
+    "log_level": "debug"
+  },
+  "configuration": {
+    "upload_concurrency": 3
+  },
+  "features": {
+    "smart_crop": true,
+    "sso_login": {
+      "apple": true,
+      "google": true,
+      "facebook": true,
+      "amazon": false
+    },
+    "notification": true
+  }
+}

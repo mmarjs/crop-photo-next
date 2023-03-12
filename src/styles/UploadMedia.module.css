@@ -1,0 +1,226 @@
+.uploadMedia_Header {
+  display: flex;
+  justify-content: space-between;
+  height: 76px;
+  align-items: center;
+  background: #ffffff;
+  /* border-bottom: 1px solid #eff1f3; */
+  box-shadow: 0px 0.5px 1px 0px #0614250d;
+  z-index: 1;
+  padding: 1rem;
+}
+.headerWrapper {
+  border-bottom: 1px solid #eff1f3;
+  z-index: 1;
+}
+.nextButton {
+  width: 6.25rem;
+}
+.selectMediaMainDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 60px 0;
+  background-color: #fafafb;
+}
+
+.selectMediaMainGalleryDiv {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* padding: 40px 60px 0; */
+  background-color: #fafafb;
+}
+
+.uploadMainPage {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.uploadMedia_mainDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #eff1f3;
+  border-radius: 8px;
+  box-shadow: 0px 0.5px 1px #0614250d;
+  overflow: hidden;
+  width: 60%;
+  max-width: 866px;
+}
+
+.uploadMedia_draggerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.DraggerWrapper {
+  width: 100%;
+  height: 100%;
+}
+.GalleryDraggerWrapper {
+  width: 100%;
+}
+.OnDrag {
+  pointer-events: none;
+}
+.uploadMedia_textDiv {
+  /*  height: 114px;
+  width: 600px; */
+}
+
+.uploadMedia_dragAndDropText {
+  line-height: 30px;
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: #061425;
+}
+
+.uploadMedia_dragAndDropText2 {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #061425;
+  margin-top: 0.5rem;
+}
+
+.uploadMedia_dragAndDropText3 {
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #626970;
+  margin-top: 8px;
+}
+.uploadMedia_img {
+  margin: 1rem 0rem !important;
+}
+
+.uploadButton {
+  width: 200px;
+  height: 44px;
+  /*   top:-15px;
+  position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 0.5px solid #d9dde1;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #061425;
+}
+.uploadButtonDiv {
+  /* width: 200px;
+  height: 44px; */
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.pointerEventNone {
+  pointer-events: none;
+}
+
+.uploadMedia_NextBtnDiv {
+  height: 44x;
+  width: 100px;
+  margin: 16px;
+}
+.uploadMedia_NextBtn {
+  height: 44px;
+  width: 100px;
+  background-color: #0038ff80;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px transparent;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 16px 10px 16px;
+  align-items: center;
+}
+
+.ViewMediaWrapper {
+  width: 100%;
+  z-index: 1;
+  margin-top: -1rem;
+  /* height: 100%; */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.TotalFiles {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  margin-right: 16px;
+}
+
+.Progress {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 16px;
+}
+
+.ProgressBar {
+  width: 72px;
+  margin-right: 16px;
+}
+
+.ProgressOverview {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 4px;
+}
+
+.StartModalContent,
+.DeleteModalContent {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+.FileUploadButton {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.SelectMediaDesc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #626970;
+  margin-bottom: 8px;
+}
+
+.SelectMediaStepAction {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.SelectMediaStepAction .CancelBtn {
+  margin-left: 8px;
+}

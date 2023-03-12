@@ -1,0 +1,72 @@
+.Wrapper {
+  margin: auto;
+  width: 600px !important;
+  max-width: 100%;
+
+  :global {
+    .ant-modal-content {
+      box-shadow: 0px 12px 16px -8px rgb(6 20 37 / 16%);
+      border-radius: 12px;
+      padding: 0px !important;
+
+      .ant-modal-close {
+        left: 19px;
+        top: 24px;
+        right: unset;
+
+        .ant-modal-close-x {
+          width: unset;
+          height: unset;
+          line-height: 1;
+          font-size: 10px;
+          color: #061425;
+        }
+      }
+
+      .ant-modal-header {
+        border-bottom: 0;
+        padding: 52px 24px 8px 24px;
+        border-radius: 12px 12px 0 0;
+
+        .ant-modal-title {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28px;
+          color: #061425;
+        }
+      }
+
+      .ant-modal-body {
+        padding: 0 24px 24px 24px;
+      }
+
+      .ant-modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        border-top: 0;
+        padding: 0 24px 24px 24px;
+
+        button {
+          &:last-child {
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .BtnClose {
+    width: 20px !important;
+    height: 20px;
+  }
+
+  &.Horizontal {
+    :global {
+      .ant-modal-content {
+        .ant-modal-header {
+          padding: 20px 16px 20px 68px;
+        }
+      }
+    }
+  }
+}

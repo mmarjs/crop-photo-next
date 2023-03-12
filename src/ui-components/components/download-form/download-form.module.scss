@@ -1,0 +1,91 @@
+.Wrapper {
+  margin-top: 16px;
+
+  .SelectFormatTitle {
+    font-size: 18px;
+    line-height: 26px;
+    color: #061425;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .CustomCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    > span:last-child {
+      font-size: 16px;
+      line-height: 24px;
+      color: #061425;
+    }
+  }
+
+  .CustomInput {
+    position: relative;
+    max-width: 200px;
+
+    input {
+      padding-right: 30px;
+      text-align: right;
+    }
+
+    &:before {
+      position: absolute;
+      font-size: 16px;
+      line-height: 24px;
+      color: #626970;
+      top: 10px;
+      left: 12px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &:after {
+      content: 'px';
+      position: absolute;
+      font-size: 16px;
+      line-height: 24px;
+      top: 10px;
+      right: 12px;
+      z-index: 1;
+      color: #061425;
+      pointer-events: none;
+    }
+  }
+
+  .WidthInput {
+    input {
+      padding-left: 60px;
+    }
+
+    &:before {
+      content: 'Width:';
+    }
+  }
+
+  .HeightInput {
+    input {
+      padding-left: 70px;
+    }
+
+    &:before {
+      content: 'Height:';
+    }
+  }
+
+  .AddCustomBtn {
+    font-size: 14px;
+    line-height: 20px;
+    color: #032EC5;
+    font-weight: 600;
+  }
+
+  .SocialMediaTitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #061425;
+    margin: 0;
+    font-weight: 600;
+  }
+}

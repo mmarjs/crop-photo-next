@@ -1,0 +1,24 @@
+.Wrapper {
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid #EFF1F3;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #061425;
+
+  h5 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    flex: 1;
+  }
+}

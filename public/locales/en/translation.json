@@ -1,0 +1,763 @@
+{
+  "UNKNOWN_ERROR_DETAILS": "Oops, that's unexpected. Do you mind reporting the steps that led to this, in our chat, so we can troubleshoot ASAP.",
+  "UNKNOWN_ERROR_TITLE": "Unknown Error",
+  "note_emphasis": "Note",
+  "FAILED_TO_DETECT_TENANT_ID": "Failed to detect tenant id.",
+  "NO_SUITABLE_MARKER_FOUND": "No face markers found.",
+  "UNKNOWN_ERROR": "Unknown error occurred",
+  "login": {
+    "forgot_password_link": "Forgot password?",
+    "title": "Welcome back",
+    "error": {
+      "not_valid": "Enter a valid email."
+    },
+    "placeholders": {
+      "email": "Enter email",
+      "password": "Enter password"
+    },
+    "sign_in": "Sign in",
+    "signing_in": "Signing in",
+    "create_account": "Create an account",
+    "sso": {
+      "google": "Continue with Google",
+      "facebook": "Continue with Facebook",
+      "amazon": "Continue with Amazon",
+      "apple": "Continue with Apple"
+    }
+  },
+  "signup": {
+    "title": "Create an account",
+    "subtitle": "No credit card required. Get started in minutes.",
+    "labels": {
+      "email": "Enter work email",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "password": "Enter password",
+      "has_existing_account": "I already have an account",
+      "create_account": "Create an account",
+      "creating_account": "Creating an account"
+    },
+    "verify": {
+      "title": "Verify your email",
+      "desc": "We’ve send a verification code to {{id}}. Please check your email.",
+      "enter_code": "Enter code",
+      "verify_code": "Verify code",
+      "back_to_daisy": "Back to sign in",
+      "verifying_code": "Verifying code..."
+    },
+    "only_work_email_allowed_error": "Only work email is allowed to signup.",
+    "account_created_successfully": "Your account has been created successfully.",
+    "success": "Your account has been created successfully"
+  },
+  "forgot_password": {
+    "title": "Forgot password",
+    "help_text": "Enter your email below to reset your password.",
+    "email": {
+      "label": "Enter email"
+    },
+    "errors": {
+      "not_match": "Passwords don't match."
+    },
+    "placeholders": {
+      "new_password": "Enter your new password",
+      "confirm_password": "Confirm your new password",
+      "email": ""
+    },
+    "back_to_signin": "Back to sign in",
+    "reset_password": "Reset password",
+    "reset_password_description": "Enter your new password and select next when you’re done."
+  },
+  "verify_code": {
+    "title": "Verify your identity",
+    "cta": "Enter your verification code",
+    "submit": "Confirm password reset",
+    "desc": "Before we can let you through, we need to verify your identity. You should have received an email with a verification code",
+    "sending": "Sending code",
+    "next": "Next",
+    "resend_otp": "Resend email",
+    "resending_otp": "Resending email...",
+    "otp_cannot_be_blank": "OTP can't be blank",
+    "invalid_otp_error": "OTP Code must be of 6 digits. Please enter correct the OTP.",
+    "sent_new_otp": "A new email is sent, you should receive it shortly",
+    "verifying_code": "Verifying code"
+  },
+  "home": {
+    "home": "Home",
+    "start_automation": "Start an automation",
+    "smart_crop": "Custom Face Crop",
+    "smart_crop_tooltip": "When you need to have full control in every aspect of your retouching on-model images this is the automation for you. ",
+    "unrecognizable_crop": "Unrecognizable Face Crop",
+    "unrecognizable_crop_tooltip": "On-model images that need to be cropped above a face marker such as the lips, nose, between the nose & eyes should use this automation. It will crop a batch of images to make the face unrecognizable. Common use-case include fashion photos, wholesale images listed on retail sites or eCommerce marketplaces. ",
+    "learn_more": "Learn more",
+    "remove_bg_resize": "Smart Resize + Background Remove",
+    "remove_bg_resize_tooltip": "This is an automation has broad use-cases. Anytime you need to retouch - resize, replace or remove background -  multiple images in bulk with or without models or persons in it, this automation is a big time saver. ",
+    "listing_analyzer": "Listing Analyzer",
+    "listing_analyzer_tooltip": "If you have a marketplace listing such as an Amazon or Walmart seller central listing, you can use this automation to measure how your images will perform against the bestsellers and what can you do to improve your conversions. ",
+    "new": "NEW",
+    "smart_labels": "Smart labels",
+    "smart_clip": "Smart clip",
+    "available": "Available",
+    "coming_soon": "Coming Soon",
+    "projects": "Projects",
+    "assetTooltip_zero": "No assets uploaded",
+    "resultTooltip_zero": "No crops generated",
+    "assetTooltip_one": "{{count}} asset uploaded",
+    "resultTooltip_one": "{{count}} crop generated",
+    "assetTooltip_other": "{{count}} assets uploaded",
+    "resultTooltip_other": "{{count}} crops generated",
+    "no_more_result": "No more automation projects found",
+    "no_data": "No automation projects are configured yet. Go ahead, create one!",
+    "duplicate_desc": "You’re about to start a new {{automationType}} automation!",
+    "filter": {
+      "error": "Type at-least two characters to search"
+    },
+    "load_more": "Load More",
+    "search_placeholder": "Find"
+  },
+  "stats": {
+    "automations": "Automations",
+    "uploads": "Uploads",
+    "total_crops": "Total Crops",
+    "downloads": "Downloads",
+    "data_visibility": "Note: You can see up to past 6 months' data.",
+    "last_7_days": "Last 7 days",
+    "last_14_days": "Last 14 days",
+    "last_1_month": "Last 1 month",
+    "last_3_months": "Last 3 months",
+    "automation_stats": "Automation stats",
+    "overall_stats": "Overall image stats",
+    "background_removed": "Backgrounds Removed"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile_and_security": "Profile and Security",
+    "profile": {
+      "label": "Profile"
+    },
+    "profile_and_security_desc": "Update your name, email, avatar. Keep your data and account secure.",
+    "billing": "Billing",
+    "all_stats": "All Stats",
+    "all_stats_desc": "Check usage history for number of automations executed, crops generated and files uploaded.",
+    "select_plan": "Select a plan",
+    "billing_desc": "Manage your credit card, view billing reports and more.",
+    "notifications": "Notifications",
+    "notifications_desc": "Choose how and where you want app notifications to appear.",
+    "data": "Data Privacy",
+    "data_desc": "Manage your data, delete it or remove your account.",
+    "logout": "Logout",
+    "feedback": "Feedback",
+    "save": "Save",
+    "form": {
+      "first_name": "First name",
+      "last_name": "Last name",
+      "full_name": "Full name",
+      "email": "Email",
+      "password": "Password",
+      "change_password": "Change password",
+      "old_password": "Please enter your current password",
+      "new_password": "New password",
+      "password_confirm": "Confirm new password",
+      "password_change_success": "Your password has been changed successfully!"
+    },
+    "sso_login_desc": "Logged in with {{providerName}}",
+    "errors": {
+      "invalid_email": "Invalid email",
+      "password_not_match": "Password does not match",
+      "password_same_as_old": "Password should not be equal to old password"
+    },
+    "tenant_display_text": "Tenant ID: {{tenantId}}"
+  },
+  "billing": {
+    "title": "Billing",
+    "no_credit_card": "No credit card setup",
+    "no_credit_card_desc": "You will need to add a credit card in order to access paid features.",
+    "add_credit_card": "Add Credit Card",
+    "no_invoices": "No invoices",
+    "no_invoices_desc": "You don’t have any invoices at the moment. Once you do, they will appear here.",
+    "amount_due": "Amount due",
+    "credit_card": "Credit card",
+    "remove_credit_card": "Remove credit card",
+    "remove": "Remove",
+    "cancel": "Cancel",
+    "remove_confirm_text": "Are you sure you want to remove your credit card? You will no longer have access to paid features.",
+    "one_time_payment": "One time payment",
+    "one_time_payment_desc": "Make a one time payment to clear a pending balance or add account credits.",
+    "one_time_payment_modal_title": "Make a one time payment",
+    "one_time_payment_modal_ok": "Pay",
+    "save_as_default": "Save as default credit card",
+    "confirm_check_text": "this will remove your current credit card",
+    "select_plan": "Select plan",
+    "yearly_discount_desc": "Save up to 20% when you choose annually",
+    "card_desc": "{{card_type}} ending in {{card_number}}",
+    "card_expires": "Expires on ",
+    "plans": {
+      "monthly": "Monthly",
+      "yearly": "Annual"
+    },
+    "plan_container": {
+      "current_plan": "Current plan",
+      "downgrade": "Downgrade to {{planName}}",
+      "upgrade": "Upgrade to {{planName}}",
+      "downgrade_from_to": "Downgrade from {{currentPlan}} to {{newPlan}}"
+    },
+    "receipt": {
+      "heading": "Billing History",
+      "tableHeadings": {
+        "date": "Date",
+        "status": "Status",
+        "amountAdded": "$ Added",
+        "amountDeducted": "$ Deducted",
+        "balance": "Balance"
+      },
+      "charge": "Charge",
+      "top_up": "Top Up",
+      "subscription": "Subscription",
+      "failed": "Failed",
+      "paid": "Paid"
+    },
+    "downgrade": {
+      "desc": "Are you sure you want to downgrade from {{currentPlan}} to {{newPlan}}?",
+      "reason": "Reason",
+      "select_label": "Select a reason",
+      "end_date": "You can still use your {{currentPlan}} plan until",
+      "reasons": {
+        "reason_one": "Too costly for me.",
+        "reason_two": "Not solving my problems.",
+        "reason_three": "Takes too long to work and understand.",
+        "reason_four": "I want someone from Crop.photo to talk to me."
+      }
+    },
+    "cancel_upcoming_plan": {
+      "title": "Cancel Upcoming Plan",
+      "desc": "Are you sure you want to cancel your upcoming plan?",
+      "confirm": "Confirm"
+    },
+    "cancel_plan": {
+      "title": "Cancel Plan",
+      "desc": "Are you sure you want to cancel your plan?",
+      "confirm": "Confirm"
+    },
+    "add_credit": {
+      "desc_expired_plan": "Your plan has expired. Please upgrade your plan and try again. ",
+      "description_free_plan": "You are currently on a free plan and adding credits on the free plan is not allowed. Please click on the Upgrade button below to switch to a paid plan.",
+      "description_paid_plan": "Add credits to your account and avoid any interruptions on your automations. You’re currently on the {{plan_name}} plan and are paying ",
+      "add_credit_error_no_amount": "Please submit the credit amount first before proceed. ",
+      "title": "Add credits",
+      "upgrade_plan": "Upgrade plan",
+      "save_card_and_pay": "Save card and pay",
+      "add_credits_button": "Add credits",
+      "text_placeholder": "Amount",
+      "monthly": "monthly. ",
+      "annually": "annually. "
+    },
+    "overage_payment": {
+      "modal_title": "Overage payment",
+      "pay_now": "Pay now",
+      "description_pay_now_modal_line_1": "Pay your overages right now before the end of your subscription renewal. We will charge the default payment method and you will receive an email once the payment is complete.",
+      "description_pay_now_modal_line_2": "Crop.photo will automatically collect the pending overages during subscription renewal.",
+      "payment_request_submitted": "Payment request submitted. You will be notified by email."
+    },
+    "plan_desc": {
+      "desc": "You’re on the {{current_plan}} plan",
+      "per_month": "{{plan_rate}} per {{plan_duration}}",
+      "expired": "Your plan has expired"
+    },
+    "change_plan": "Change plan",
+    "remove_card": "Remove Card",
+    "current_balance": "Current balance",
+    "current_overage": "Overage balance",
+    "scheduled_plan_desc": "You have a scheduled update to {{plan_name}} plan on",
+    "plan_end_desc": "Current plan ends on ",
+    "next_charge_date": "Next charge on ",
+    "switch_plan_modal": {
+      "title": "Switch to {{switchToPlan}} subscription",
+      "okText": "Switch to {{switchToPlan}}",
+      "cancel_text": "Cancel",
+      "desc": "Switch your {{current_plan}} plan from {plan_duration} to {{switch_to_plan}} for $240.78. We will charge this card we have on file. Your {{switch_to_plan}} plan will take effect now."
+    },
+    "add_new_card_modal": {
+      "button_text": "Add new card",
+      "ok_button_text": "Save Card",
+      "title": "Add New Card"
+    },
+    "update_credit": {
+      "button_text": "Update",
+      "okButton_text": "Update",
+      "modal_title": "Update credit card"
+    },
+    "proceed_to_payment": "Proceed to payment",
+    "subscribe": "Subscribe",
+    "expired": "Expired",
+    "learn_more": "Learn more",
+    "upgrade_cancel": "Cancel upcoming plan",
+    "cancel_plan_text": "Cancel plan"
+  },
+  "editable_automation_name": {
+    "heading": "Project Name",
+    "subHeading": "Rename your project anytime. ",
+    "learn_more": "Learn more"
+  },
+  "configuration": {
+    "errors": {
+      "automation_name_len": "Automation name is required and must be at least 3 characters long",
+      "empty_automation_name": "Please enter a project name"  
+    },
+    "left_panel": {
+      "autosave_in_progress": "crop.photo is saving your work...",
+      "autosaveText": "crop.photo saves your work as you press Next",
+      "sampleImages": "Sample Images",
+      "select_a_marker_dropdown": {
+        "prompt": "Select a marker",
+        "NOSE": "Nose",
+        "FACE": "Face",
+        "EYES": "Eyes",
+        "MOUTH": "Mouth",
+        "BETWEEN_EYES_AND_NOSE": "Between eyes & nose",
+        "BETWEEN_NOSE_AND_MOUTH": "Between nose & mouth"
+      },
+      "size_output": "Size Output",
+      "review_settings": "Review Settings",
+      "bg_settings": "Background Settings",
+      "output_size_settings": "Output Size Settings",
+      "review_step": "Review and Upload Media",
+      "marker_settings": "Marker Settings",
+      "output_sizes": "Output Sizes",
+      "size_output_desc": "Select or add as many output sizes as you wish. We generate all possible output results as you add from the same media file. ",
+      "crop_marker": {
+        "label": "Crop marker",
+        "short_desc": "This will serve as a reference point for the automated crop action. ",
+        "link_text": "Learn more"
+      },
+      "remove_background_options": {
+        "transparent": "Transparent",
+        "white": "White",
+        "solid_color": "Solid Color",
+        "background_image": "Background Image"
+      },
+      "remove_background": {
+        "label": "Remove Background",
+        "description": "Crop.photo removes your image’s background. ",
+        "learn_more": "Learn more",
+        "checkbox_label": "Remove Background"
+      },
+      "body_part_detection": {
+        "checkbox_label": "Back Pose Detection"
+      },
+      "crop_type": {
+        "label": "Crop type",
+        "crop_from_card": {
+          "label": "Crop from",
+          "subtitle": "Example: Crop the image from below the nose"
+        },
+        "crop_around_card": {
+          "label": "Crop around",
+          "subtitle": "Example: Crop the image around the face"
+        },
+        "edit_button": "Edit crop type",
+        "next_button": "Continue"
+      },
+      "crop_side": {
+        "label": "Crop side",
+        "top": "Top",
+        "bottom": "Bottom",
+        "left": "Left",
+        "right": "Right"
+      },
+      "checkbox_label": "Include marker's bounding box",
+      "remove_bg_checkbox": "Remove background",
+      "position": {
+        "label": "Position"
+      },
+      "crop_size": {
+        "label": "Crop size",
+        "label_alt": "Crop Area",
+        "short_desc": "You can change values here to resize the cropped area.",
+        "link_text": "Learn more"
+      }
+    }
+  },
+  "upload": {
+    "files_skipped": "Some files are skipped! Only jpeg, png, webp and gif upto 25MB are supported.",
+    "drag_and_dropped": {
+      "title": "Drag and drop your media",
+      "subtitle": "Feel free to drop multiple files in one go.",
+      "desc_1": "Our media uploader is designed for ingesting large",
+      "desc_2": "batches of files quickly from your desktop."
+    },
+    "select_from_device": "Select from device",
+    "select_media_modal": {
+      "title": "Start smart crop",
+      "cancel_text": "Cancel",
+      "ok_text": "Start smart crop",
+      "desc": "You're about to start the smart crop automation on selected files.",
+      "next": "Next",
+      "prev": "Previous"
+    },
+    "select_format": {
+      "title": "Select size",
+      "custom_formats": "Custom sizes"
+    },
+    "add_custom_size": {
+      "title": "Add custom size",
+      "width": {
+        "label": "Width",
+        "placeholder": "Enter width"
+      },
+      "height": {
+        "label": "Height",
+        "placeholder": "Enter height"
+      },
+      "errors": {
+        "missing_width": "Width is required",
+        "missing_height": "Height is required",
+        "custom_size_exists": "Custom size already exists."
+      },
+      "save_size": "Save size",
+      "cancel": "Cancel",
+      "confirm_delete_title": "Delete Custom Size",
+      "confirm_delete_desc": "Are you sure you want to delete this custom size?"
+    },
+    "parameters": {
+      "title": "Parameters",
+      "subtitle": "Background",
+      "desc": "We will add a background if the image dosen’t fill the available space according to the Aspect Ratio and Crop Size. ",
+      "errors": {
+        "hex_format": "Please enter a valid hex value"
+      }
+    },
+    "no_search_result": "No results found.",
+    "upload_more": "Upload more",
+    "upload_more_tooltip_text": "For an even faster upload experience, try drag-n-drop to anywhere on this page.",
+    "page_out_upload_cancel_confirm": "Upload is in progress. Do you want to cancel the uploads?",
+    "confirm_upload_cancel": "Are you sure you want to cancel the upload?",
+    "cancel_upload_ok_button_text": "Cancel upload",
+    "delete_modal_cancel_button_text": "Don't delete",
+    "cancel_upload_text": "Don't cancel",
+    "uploading_message": "{{total}} {{assets}} uploading",
+    "delete": {
+      "title": "Are you sure you want to delete these {{count}} assets?",
+      "okText": "Delete {{count}} assets",
+      "desc": "You can not undo this action.",
+      "deleteBtn_text": "Delete {{count}}"
+    }
+  },
+  "in_progress": {
+    "left_panel": {
+      "tip": {
+        "title": "Tip",
+        "desc": "You can close this window worry free. We'll continue processing your media."
+      },
+      "board_report": {
+        "elapsed_time": "Elapsed time",
+        "approx": "Approximate",
+        "per_image": "per crop",
+        "average_of": "Average of",
+        "eta": "ETA",
+        "cost": "Cost",
+        "cost_estimate": "Cost estimate",
+        "saved": "Saved"
+      },
+      "summary": {
+        "title": "Smart crop automation crop from top of nose",
+        "completed_on_prefix": "Completed on",
+        "duplicate_label": "Duplicate smart crop",
+        "rename_label": "Rename",
+        "favorite_label": "Favorite"
+      },
+      "pause": "Pause",
+      "resume": "Resume",
+      "stop": "Stop",
+      "stop_modal": {
+        "title": "Stop smart crop",
+        "ok_text": "Stop smart crop",
+        "cancel_text": "Don't stop",
+        "desc": "You will need to duplicate this smart crop if you want to restart it."
+      }
+    },
+    "summary": {
+      "paused_toast_label": "This smart crop automation is currently paused"
+    }
+  },
+  "summary": {
+    "automation_running": {
+      "title": "Cropping in progress",
+      "desc": "We’re currently processing your media. We’ll alert you once the crops are ready. Feel free to close this now."
+    },
+    "download": {
+      "label": "Download",
+      "download_all": "Download all",
+      "download_desc": "You're {{count}} crops zip is ready to download.",
+      "download_with_count": "Download {{count}}",
+      "generating_zip_file": "Generating zip file...",
+      "downloading": "Downloading..."
+    },
+    "zip_modal": {
+      "title": "Download zip",
+      "download": "Download",
+      "cancel": "Cancel"
+    },
+    "download_all_modal": {
+      "title": "Are you sure you want to download {{count}} crop images?",
+      "ok_text": "Start download",
+      "cancel_text": "Cancel",
+      "desc": "You can not undo this action."
+    }
+  },
+  "media": {
+    "social_media": "Social Media",
+    "custom_format": "Custom Format",
+    "original": "Original",
+    "add_custom": "Add custom",
+    "image_not_loaded": "Image cannot be loaded."
+  },
+  "instagram": "Instagram",
+  "twitter": "Twitter",
+  "facebook": "Facebook",
+  "linkedin": "Linkedin",
+  "pinterest": "Pinterest",
+  "loading": "Loading",
+  "asset": {
+    "confirm_delete": "Are you sure you want to delete this asset?",
+    "delete": "Delete",
+    "do_not_delete": "Don't delete"
+  },
+  "main_report": {
+    "header": {
+      "sign_in": "Sign In",
+      "register": "Register Now",
+      "download": "Download",
+      "see_report": {
+        "small": "Full Report",
+        "large": "See Full Report"
+      },
+      "listing_analyzer": "Listing Analyzer",
+      "report": "Report",
+      "copy": "Copy Link",
+      "copied": "Copied to clipboard"
+    },
+    "hero": {
+      "title": "Your Report is",
+      "gradientText": "Ready!",
+      "desc": "Just enter another listing URL below, to generate a new report.",
+      "upload_link": "Upload Files",
+      "new_report": "New Report",
+      "start": "Start",
+      "placeholder": "Please enter a new listing URL",
+      "invalid_url": "*Invalid listing URL. Please verify the link pasted above. ",
+      "INVALID_LISTING_URL": "Invalid Listing URL. Check the listing URL.",
+      "RAINFOREST_API_ERROR": "Request failed with status code 401",
+      "INTERNAL_SERVER_ERROR": "Oops! Something went wrong with the analyzer, please start over again."
+    },
+    "current_score": {
+      "tooltip": "Tooltip for Current Score"
+    },
+    "explore_btn": "Explore Other Marketplaces",
+    "price_desc": "Price change based on variants",
+    "variants_desc": "{{count}} variant images found",
+    "zero_variants_desc": "No variants images found",
+    "listing_score": {
+      "title": "Your Listing Scores Revealed",
+      "crop_photo": "Crop.photo",
+      "desc": "can retouch your images to improve your scores & prepare them for other marketplaces, once you signup.",
+      "score": "Score",
+      "overall_score": "Overall Score"
+    },
+    "score_card": {
+      "after_crop": "after Crop.photo",
+      "no_improvements": "No Improvements Needed",
+      "max_score": "Maximum Score"
+    },
+    "desktop_reminder": {
+      "open": "Open",
+      "crop.photo": "Crop.Photo",
+      "open_cont": "on desktop for a better experience"
+    },
+    "improve_score": {
+      "desc": "We identified",
+      "desc_issues": "{{issues_count}} issues in the listing images",
+      "desc_cont": "Fix them to improve your score by",
+      "critical_issues": "Critical Issues - Must Fix",
+      "recommended_changes": "Non-Critical Issues - Good to Fix",
+      "success": "Success!",
+      "match": "Photos Match Requirements",
+      "marketplace": "{{marketplace}}",
+      "recommend": "recommend",
+      "photos_count": "{{count}} Photos",
+      "cont": "for this product category. You can see example for angles below.",
+      "listing_example": "Listing Example",
+      "critical_issues_list": {
+        "image_crop_status": "Image crop status",
+        "responsive_quality": "Responsive image quality",
+        "image_branding": "Branding on image",
+        "min_dpi": "Minimum DPI",
+        "aspect_ratio": "Aspect Ratio"
+      },
+      "recommended_changes_list": {
+        "image_format": "Source image format",
+        "centered_format": "Centered product",
+        "square_image": "Square image",
+        "high_resolution_zoom": "High Resolution Zoom"
+      }
+    },
+    "fix_it_tool": {
+      "title": "Join Fix It Tool ",
+      "waitlist": "Waitlist",
+      "join_waitlist": "Join Waitlist",
+      "placeholder": "Write your email here...",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis bibendum justo purus, non consectetur quam commodo id. Nam id rutrum nunc.",
+      "after_fix": "After Fix"
+    },
+    "score_by_image": {
+      "title": "Score by Image",
+      "sign_up": "Sign up",
+      "sign_up_cont": "now to unlock all image reports with details. By signing-up you can also fix the issues we found!",
+      "selected_image": "Selected Image's",
+      "total_score": "Total Score",
+      "critical_issues_fixed": "Critical Issues Fixed",
+      "recommended_changes_fixed": "Recommended Changes Fixed",
+      "view_report": "View detailed report",
+      "join": "Join",
+      "crop_photo": "Crop.Photo",
+      "join_description": "Register to unlock reports for  all your photos. By sign up you also enable report download.",
+      "sign_in": "Sign In",
+      "register": "Register Now",
+      "lock_message": "Detailed Report locked for Variants.",
+      "main_photo": "Main Photo",
+      "variant": "Variant"
+    },
+    "main_highlights": {
+      "title": "Main Highlights",
+      "tooltip": "Here are some tips for your photos to meet the marketplace requirements.",
+      "link": "See Full Report",
+      "desc_1": "Check out main highlights of your report.",
+      "desc_2": "Click to go to details",
+      "desc_2_cont": "or scroll down to"
+    },
+    "detailed_report": {
+      "title": "Detailed Report",
+      "export": "Export Full Report",
+      "signup_cont": " now to unlock all image reports. By registering you can also download your reports.",
+      "how_to": "How To Fix",
+      "empty_details": "No details available",
+      "tooltip": "Tooltip text for detailed report",
+      "collapsed": {
+        "small": "Collapsed Report",
+        "large": "Collapsed"
+      },
+      "collapse": {
+        "small": "Collapse Report",
+        "large": "Collapse"
+      },
+      "expanded": {
+        "small": "Expanded Report",
+        "large": "Expanded"
+      },
+      "expand": {
+        "small": "Expand Report",
+        "large": "Expand"
+      }
+    },
+    "detailed_report_accordions": {
+      "desc_title": "Description",
+      "panels": {
+        "photography": "Photography",
+        "dimensions": "Dimensions",
+        "policies": "Policies",
+        "data_category": "Data and Category"
+      },
+      "panel_tabs": {
+        "critical_issues": "Critical Issues",
+        "recommended_fixes": "Recommended Fixes",
+        "suggested_changes": "Suggested Changes"
+      },
+      "buttons": {
+        "prev_small": "Back",
+        "prev_large": "Previous Image Report",
+        "next_small": "Next",
+        "next_large": "Next Image Report"
+      },
+      "headers": {
+        "improve_by": "Score can be improved by",
+        "see_details": "See Details"
+      },
+      "main_image": {
+        "title1": "Main Image's",
+        "title2": "Total Score",
+        "desc": "after Crop.photo",
+        "variant_title": "Variant Image's"
+      }
+    },
+    "footer": {
+      "title1": "See how your images",
+      "title2": "scored in other marketplaces",
+      "explore": "Explore Other Marketplaces"
+    },
+    "marketplace_card": {
+      "coming_soon": "Coming Soon"
+    },
+    "notify_me": {
+      "title": "Notify Me",
+      "desc": "You will be notified when {{marketplace}} becomes available.",
+      "cancel_text": "No, I don't want to get notified"
+    }
+  },
+  "analyser": {
+    "title": {
+      "get": "Get",
+      "insights": "Insights",
+      "cont": "Accelerate Sales"
+    },
+    "description": "Crop.photo image optimizer makes sure all your listings are optimized for sales anywhere you sale.",
+    "placeholder": "Add listing URL from  Amazon, Nordstrom, AliExpress, etc...",
+    "button_label": "Analyse Now!",
+    "try_now": "Try now,",
+    "its_free": "it's free!",
+    "paste": "Paste your listing link below or click to",
+    "upload_text": "Upload Files"
+  },
+  "erase_restore_detail": {
+    "title": "Background Cleanup",
+    "description": "Erase areas of your image to extend its background. You can also restore your image according to the original uploaded file."
+  },
+  "erase_restore": {
+    "tool_thickness": "Tool Thickness",
+    "erase": "Erase",
+    "restore": "Restore",
+    "reset": "Reset Changes",
+    "kb_shortcuts": "Keyboard Shortcuts",
+    "kb_shortcuts_desc": "Speed up your work with keyboard shortcuts.",
+    "editing": "Keep Editing",
+    "discard": "Discard Changes",
+    "unsafe_leave": "Leave without saving?",
+    "cancel": "Cancel",
+    "lose_changes": "You'll lose recent changes"
+  },
+  "keyboard_shortcuts": {
+    "erase": "Erase Image",
+    "restore": "Restore Image",
+    "undo": "Undo Action",
+    "redo": "Redo Action",
+    "scroll_y": "Scroll Vertically",
+    "scroll_x": "Scroll Horizontally",
+    "increase_thickness": "Increase Thickness",
+    "decrease_thickness": "Decrease Thickness"
+  },
+
+  "errors": {
+    "invalid_email": "Please enter a valid email address",
+    "insufficient_credits": "You do not have enough credits to start this automation",
+    "automation_delete": "You cannot delete an Automation in running state",
+    "automation_not_exist": "The Automation does not exist",
+    "invalid_promo_code": "Promo code is invalid",
+    "automation_start_not_allowed": "Starting automation not allowed",
+    "coupon_not_valid_for_customer": "This promo code is not valid for you.",
+    "coupon_not_valid_for_adding_credits" : "This coupon is not valid for adding Credits",
+    "coupon_only_valid_for_applicable_products":"This coupon is only valid for some selected plans."
+  },
+  "exception": {
+    "client_error": {
+      "amount_is_not_chargeable": "Not enough amount to charge.",
+      "payment_going_in_try_again_later": "Previous payment is still in progress and not settled yet. Please try again after 5 minutes"
+    }
+  }
+}

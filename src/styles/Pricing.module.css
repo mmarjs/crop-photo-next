@@ -1,0 +1,57 @@
+.Wrapper {
+  background-color: #FAFAFB;
+  padding: 40px 0 132px;
+  align-items: center !important;
+}
+
+.AnnualBenefit {
+  font-size: 24px;
+  line-height: 36px;
+  color: #061425;
+  margin: 0;
+}
+
+.CardView {
+  position: relative;
+  padding: 0 96px;
+}
+
+.CardScroller {
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.CardList {
+  display: inline-flex;
+}
+
+.CardList > div {
+  margin-right: 48px;
+}
+
+.BtnScroll {
+  position: absolute;
+  border: 1px solid #D9DDE1;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 64px rgb(6 20 37 / 12%);
+  border-radius: 50%;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 54px;
+  z-index: 1;
+}
+
+.BtnScrollReverse {
+  left: 54px;
+  right: unset;
+}
+
+.BtnScrollReverse svg {
+  transform: rotate(180deg);
+}

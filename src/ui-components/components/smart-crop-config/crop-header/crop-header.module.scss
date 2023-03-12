@@ -1,0 +1,28 @@
+.headerWrapper {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #eff1f3;
+  // box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  justify-content: space-between;
+  box-shadow: 0px 0.5px 1px 0px #0614250D;
+  z-index: 1;
+  padding: 1rem;
+}
+.headerTitle {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #061425;
+}
+// .BtnClose {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: 16px;
+// }
+
+.BtnDone {
+  width: 6.25rem;
+}

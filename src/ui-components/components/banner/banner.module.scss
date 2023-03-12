@@ -1,0 +1,29 @@
+.Wrapper {
+  :global {
+    .ant-alert {
+      padding: 12px;
+      background-color: #fafafb;
+      border-radius: 8px;
+      border: none;
+
+      .ant-alert-message {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #061425;
+      }
+
+      .ant-alert-description {
+        font-size: 14px;
+        line-height: 20px;
+        color: #061425;
+      }
+
+      .ant-alert-close-icon {
+        .anticon svg {
+          fill: #061425;
+        }
+      }
+    }
+  }
+}

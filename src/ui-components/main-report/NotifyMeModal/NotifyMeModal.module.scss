@@ -1,0 +1,61 @@
+.NotifyMe {
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #061425;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475569;
+    margin-bottom: 24px;
+  }
+
+  & .cancelContainer {
+    margin-top: 24px;
+    cursor: pointer;
+    text-align: center;
+
+    p {
+      margin-bottom: 0;
+      color: #ff2727;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  :global {
+    .ant-modal-title {
+      visibility: hidden;
+    }
+
+    .ant-modal-content {
+      background: #ffffff;
+      border-radius: 16px;
+      padding-top: 0;
+    }
+
+    .ant-modal-body {
+      padding: 40px 32px 8px;
+      padding-top: 0;
+    }
+
+    .ant-modal-header {
+      height: 52px;
+      border-radius: 16px 16px 0 0;
+      border-bottom: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & .cancelContainer {
+      margin-top: 40px;
+      text-align: left;
+    }
+  }
+}

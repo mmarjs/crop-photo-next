@@ -1,0 +1,42 @@
+.ParametersContainer {
+  .ParametersTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+
+  .ParametersDesc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #626970;
+    margin-bottom: 8px;
+  }
+
+  .ParameterRadioLabel {
+    color: #061425;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ParametersRadioGroup {
+    margin-bottom: 24px;
+  }
+
+  :global {
+    .ant-input-affix-wrapper {
+      width: 175px;
+      border-radius: 5px;
+      height: 40px;
+    }
+  }
+
+  .customParameterError {
+    position: relative;
+    color: red;
+    top: -20px;
+    margin-bottom: 0;
+  }
+}

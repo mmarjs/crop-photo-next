@@ -1,0 +1,109 @@
+.card {
+  width: 14.8rem;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #0038ff;
+  box-shadow: 0px 1px 4px -1px rgba(0, 56, 255, 0.48);
+  border-radius: 0.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  &:hover {
+    background: #002dce;
+  }
+  &:active {
+    background: #00109f;
+  }
+
+  .iconBadgeWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cardIconContainer {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comingSoonBadge {
+    // width: 2rem;
+    height: 1.5rem;
+    background: #f2f5ff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 10px;
+    color: #94a3b8;
+  }
+  .newBadge {
+    // width: 2rem;
+    // height: 1.5rem;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 10px;
+    color: #0038ff;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .cardTitle {
+    // margin-top: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .cardDescription {
+    font-weight: 700;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .cardDescWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
+
+.disabled {
+  background: #cbd5e1;
+  border: 1px solid #eff1f3;
+  cursor: default;
+  box-shadow: none;
+  // pointer-events: none;
+  &:hover {
+    background-color: #cbd5e1;
+  }
+  .cardInfo {
+    color: rgba(255, 255, 255, 0.16);
+  }
+
+  .cardTitle {
+    // margin-top: auto;
+    font-weight: 600;
+  }
+}
+
+.cardInfo {
+  margin-left: 5px;
+}

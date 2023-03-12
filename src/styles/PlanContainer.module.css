@@ -1,0 +1,208 @@
+.planContainer {
+  width: 344px;
+  min-height: 436px;
+  height: 100%;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 6px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.planContainerWrapper {
+  width: 100%;
+  min-height: 436px;
+  height: 100%;
+}
+
+.planContainerWrapper > div {
+  min-height: 436px;
+  height: 100%;
+}
+.CarouselContainer {
+  /* margin: 0 40px; */
+  position: unset !important;
+  border-top: 1px solid #d9dde1;
+  padding-top: 24px;
+}
+
+.CarouselContainer ul {
+  margin-left: -20px !important;
+}
+
+.CarouselButtonGroup {
+  position: absolute;
+}
+
+.previousIcon {
+  position: absolute;
+  top: 50%;
+  left: 44px;
+  cursor: pointer;
+}
+.nextIcon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+}
+
+.planName {
+  font-size: 14px;
+  color: #626970;
+  line-height: 20px;
+}
+.planRate {
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 32px;
+  color: #061425;
+  margin-bottom: 32px;
+}
+.descItems {
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.learnMore {
+  /* position: absolute;  */
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.planStatus {
+  margin: 10px;
+  width: 296px;
+  margin-left: 0;
+  margin-bottom: 0;
+  height: 44px;
+}
+.planStatusText {
+  color: #d3180c;
+  font-size: 12px;
+  font-weight: 500;
+}
+.downgradeType {
+  margin: 10px;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  height: 44px;
+  background: #f3f4f5 !important;
+}
+.downgradeTypeLabel {
+  color: #061425;
+}
+.planCurrent {
+  background-color: rgba(0, 56, 255, 0.5) !important;
+  margin: 10px;
+  width: 100%;
+  margin-left: 0px;
+  height: 44px;
+  margin-bottom: 0;
+}
+.upcomingPlanButton {
+  /* background-color: #FDBE1B !important; */
+  background-color: #fff !important;
+  width: 100%;
+  color: #0038ff !important;
+  border: 1px solid #0038ff !important;
+  box-shadow: none !important;
+}
+.expiredPlanButton {
+  width: 100%;
+}
+.expiredPlan {
+  color: white;
+}
+.alreadySelectedPlan {
+  background-color: rgba(0, 56, 255, 0.5) !important;
+  pointer-events: none;
+}
+.learnMoreLabel {
+  color: #0038ff;
+  font-weight: 600;
+}
+.learnMoreLabel:hover {
+  cursor: pointer;
+}
+.recommended {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+.planDuration {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #626970;
+  display: inline-block;
+  margin-left: 4px;
+}
+.reasonHeader {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.asterix {
+  display: inline-block;
+  color: #e8340d;
+}
+
+.dropdownClassName :global .ant-select-selector {
+  height: 44px !important;
+  width: 552px !important;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05) !important;
+  border: 0.5px solid #d9dde1 !important;
+  border-radius: 5px !important;
+}
+
+.dropdownClassName :global .ant-select-selector .ant-select-selection-item,
+.dropdownClassName :global .ant-select-selector .ant-select-selection-placeholder {
+  line-height: 44px !important;
+  height: 44px !important;
+  border-radius: 8px !important;
+}
+
+.bottomMsg {
+  margin-top: 24px;
+  color: #061425;
+  font-size: 16px;
+}
+.topMsg {
+  color: #061425;
+  font-size: 16px;
+}
+.planStatus {
+  color: #e8340d;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1440px) {
+  .nextIcon {
+    right: 10px;
+    transition: all 0.5s;
+  }
+  .previousIcon {
+    left: 28px;
+    transition: all 0.5s;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .previousIcon {
+    left: 10px;
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,21 @@
+.vlayout {
+  display: grid;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.vlayout > * {
+  flex: 1 auto auto;
+}
+
+.NoMargin {
+  margin: 0;
+}
+
+.NoFlex {
+  align-items: flex-start;
+
+  > * {
+    flex: unset;
+  }
+}

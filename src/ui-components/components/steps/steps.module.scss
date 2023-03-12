@@ -1,0 +1,72 @@
+.Wrapper {
+  width: unset;
+
+  :global {
+    .ant-steps-item {
+      .ant-steps-item-tail:after {
+        height: 1px;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .ant-steps-item-container {
+        .ant-steps-item-tail {
+          margin-left: 55px;
+        }
+
+        .ant-steps-item-icon {
+          margin-left: 54px;
+        }
+
+        .ant-steps-item-content {
+          width: 110px;
+
+          .ant-steps-item-title {
+            color: #061425;
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      &.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail:after {
+        background-color: #A9CAFC;
+      }
+
+      &.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-tail:after {
+        background-color: #0038FF;
+      }
+
+      &.ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-tail:after {
+        background-color: #D9DDE1;
+      }
+    }
+  }
+
+  .CustomDot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #D9DDE1;
+    display: block;
+    position: relative;
+    top: -7px;
+    left: -7px;
+
+    &.Finished {
+      color: #A9CAFC;
+      background-color: white;
+      transform: scale(0.92);
+      top: -6px;
+      left: -6px;
+    }
+
+    &.Process {
+      width: 20px;
+      height: 20px;
+      background-color: #0038FF;
+      top: -6px;
+      left: -6px;
+    }
+  }
+}

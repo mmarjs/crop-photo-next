@@ -1,0 +1,23 @@
+.hlayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    flex: 1 auto auto;
+    padding: 5px;
+  }
+}
+
+.NoPadding > * {
+  padding: 0;
+}
+
+.NoFlex > * {
+  flex: unset;
+}
+
+.Grid > * {
+  flex: 1;
+}

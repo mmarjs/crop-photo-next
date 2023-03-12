@@ -1,0 +1,202 @@
+.Button {
+  // min-width: 25px;
+  // min-height: 7px;
+  text-align: center;
+  // vertical-align: middle;
+  // flex-direction: column;
+  // flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #061425;
+
+  &:not(:global(.ant-btn-primary)):not(:global(.ant-btn-text)):not(:global(.ant-btn-dangerous)) {
+    background-color: #ffffff;
+    border: 0.5px solid #d9dde1;
+    box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+    color: #061425;
+
+    &:hover {
+      background-color: #f3f4f5;
+      color: #061425;
+      border: 0.5px solid #d9dde1;
+    }
+
+    &:active {
+      background-color: #d9dde1;
+      border: 0.5px solid #d9dde1;
+      color: #061425;
+    }
+
+    &:focus {
+      background-color: #eff1f3;
+      border: 1.5px solid #5177fa;
+      color: #061425;
+    }
+
+    &:disabled {
+      background-color: #d9dde1;
+      border: 1.5px solid #d9dde1;
+      color: #061425;
+
+      span {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.WithIconAtRight {
+    flex-direction: row-reverse;
+  }
+
+  &:global(.btn-lg) {
+    height: 44px;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 8px;
+
+    &.IconOnly {
+      width: 44px;
+      padding: 10px 0;
+    }
+
+    //&:not(.IconOnly) {
+    //  min-width: 100px;
+    //}
+
+    &.WithIconAtLeft span {
+      margin-left: 10px;
+    }
+
+    &.WithIconAtRight span {
+      margin-right: 10px;
+    }
+  }
+
+  &:global(.btn-md) {
+    height: 36px;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 8px;
+
+    &.IconOnly {
+      width: 36px;
+      padding: 10px 0;
+    }
+
+    &:not(.IconOnly) {
+      min-width: 100px;
+    }
+
+    &.WithIconAtLeft span {
+      margin-left: 7.7px;
+    }
+
+    &.WithIconAtRight span {
+      margin-right: 7.7px;
+    }
+  }
+
+  &:global(.btn-sm) {
+    height: 24px;
+    padding: 2px 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 6px;
+
+    &.IconOnly {
+      width: 24px;
+      padding: 2px 0;
+    }
+
+    &.WithIconAtLeft span {
+      margin-left: 5.3px;
+    }
+
+    &.WithIconAtRight span {
+      margin-right: 5.3px;
+    }
+  }
+
+  &:global(.ant-btn-primary) {
+    background-color: #0038ff;
+    box-shadow: 0px 2px 4px rgba(0, 56, 255, 0.16);
+    border: none;
+    color: white;
+
+    &:hover {
+      background-color: #032ec5;
+    }
+
+    &:active {
+      background-color: #00109f;
+      box-shadow: none;
+    }
+
+    &:focus {
+      border: 1.5px solid #a9cafc;
+    }
+
+    &:disabled {
+      background-color: rgba(0, 56, 255, 0.5);
+      box-shadow: none;
+      color: white;
+    }
+
+    &:global(.ant-btn-dangerous) {
+      background-color: #ec1609;
+      box-shadow: 0px 2px 4px rgba(236, 22, 9, 0.16);
+
+      &:hover {
+        background-color: #d3180c;
+      }
+
+      &:active {
+        background-color: #a61d15;
+      }
+
+      &:focus {
+        border: 1.5px solid rgba(236, 22, 9, 0.25);
+      }
+
+      &:disabled {
+        background-color: rgba(236, 22, 9, 0.5);
+        box-shadow: none;
+        color: #fff;
+      }
+    }
+  }
+
+  &:global(.ant-btn-default) {
+    background-color: #0038ff;
+    box-shadow: 0px 2px 4px rgba(0, 56, 255, 0.16);
+
+    &:hover {
+      background-color: #032ec5;
+    }
+
+    &:active {
+      background-color: #00109f;
+      box-shadow: none;
+    }
+
+    &:focus {
+      border: 1.5px solid #a9cafc;
+    }
+
+    &:disabled {
+      background-color: rgba(0, 56, 255, 0.5);
+      box-shadow: none;
+    }
+  }
+}
+
+.linkButton {
+  min-width: 25px;
+  min-height: 7px;
+}

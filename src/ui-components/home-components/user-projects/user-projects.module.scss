@@ -1,0 +1,58 @@
+.userProjects {
+  margin-top: -1rem;
+}
+.headingContainer {
+  margin: 0 !important;
+  padding: 0 2.5rem;
+  padding-right: 0;
+  margin-right: 0.5rem !important;
+}
+.projectHeading {
+  font-size: 1.37rem !important;
+}
+.projectList {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 1.25rem 0;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  &.emptyProjectList {
+    height: 208px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.projectSkeleton {
+  width: 344px;
+  height: 208px;
+  border: 1px solid #d9dde1;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 8px;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+}
+.loadMore {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  button {
+    border: 1px solid #0038ff;
+    color: #0038ff;
+    font-size: 16px;
+    height: 40px;
+  }
+}
+.projectNoMoreResult,
+.projectNoData {
+  margin: 0 40px;
+}
+.projectNoData {
+  text-align: center;
+}
+.headerWrapper {
+  display: flex;
+  align-items: center;
+}

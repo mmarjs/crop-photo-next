@@ -1,0 +1,19 @@
+.rightPanelWrapper {
+  width: calc(100vw - 339px);
+  display: flex;
+  flex-direction: column;
+
+  &.noLeftPanel {
+    width: 100%;
+  }
+
+  & .imageViewer {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .selectedSampleImageContainer {
+    width: 100%;
+    height: 100vh;
+  }
+}

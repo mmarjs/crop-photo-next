@@ -1,0 +1,13 @@
+.loadingWrapper {
+  padding: 0px 14.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // position: absolute;
+
+  @media screen and (max-width: 1044.98px) {
+    flex-direction: column;
+    padding: 0px;
+  }
+}

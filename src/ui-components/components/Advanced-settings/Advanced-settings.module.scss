@@ -1,0 +1,62 @@
+.wrapper {
+}
+
+.collapse,
+.panel {
+  background-color: #fff;
+  border: 0px;
+  padding: 0px;
+  &:global(.ant-collapse-item) {
+    border: none;
+  }
+  &:global(.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header) {
+    padding: 0px;
+  }
+  &:global(.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow) {
+    right: 0px;
+  }
+  &:global(.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box) {
+    padding: 0px;
+  }
+  & > div {
+    padding: 0 !important;
+  }
+}
+
+.panelHeading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 4px;
+  color: #061425;
+  display: flex;
+  align-items: center;
+}
+.shortdescription {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #626970;
+}
+
+.helpIcon {
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.removeBg {
+  margin-bottom: 1rem;
+  align-items: center;
+}

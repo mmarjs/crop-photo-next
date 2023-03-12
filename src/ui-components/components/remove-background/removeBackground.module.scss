@@ -1,0 +1,41 @@
+.wrapper {
+  // padding: 1.5rem;
+  margin-bottom: 2rem;
+  .learnMoreBtn {
+    color: #0038ff;
+    padding: 0px;
+  }
+}
+
+.label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 4px;
+  color: #061425;
+  display: flex;
+  align-items: center;
+}
+.shortdescription {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #626970;
+}
+
+.helpIcon {
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.removeBg {
+  margin-bottom: 1rem;
+  align-items: center;
+}

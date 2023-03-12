@@ -1,0 +1,113 @@
+//mobile-first
+.MainReport {
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+  font-family: "TT-Interphases";
+  height: 100vh;
+  margin: 0 auto;
+
+  & .HeroToListingWrapper {
+    padding-top: 40px;
+    background: radial-gradient(189.92% 50.03% at 0% 100%, rgba(43, 77, 255, 0.1) 0%, rgba(248, 250, 252, 0) 100%),
+      radial-gradient(88.09% 65.62% at 100% 100%, rgba(255, 130, 227, 0.1) 0%, rgba(248, 250, 252, 0) 100%), #f7f8fc;
+    backdrop-filter: blur(4px);
+
+    &.errorContainer {
+      height: calc(100vh - 64px);
+      // background: #fff;
+    }
+  }
+
+  & .DetailedReportWrapper {
+    background: #f7f8fc;
+    position: relative;
+  }
+
+  & .innerContainer {
+    max-width: 1224px;
+    margin: 0 auto;
+  }
+
+  button,
+  input {
+    border-radius: 100px;
+    padding-left: 20px;
+  }
+
+  button:disabled {
+    color: #fff;
+    border: none;
+  }
+
+  & .circle1 {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  & .circle2 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    & .HeroToListingWrapper {
+      padding-bottom: 96px;
+      padding-top: 80px;
+
+      &.errorContainer {
+        height: calc(100vh - 98px);
+      }
+    }
+
+    & .HeroToListingWrapper.showJoinWaitlist {
+      padding-bottom: 281px;
+    }
+  }
+}
+
+.meetingRequirementsPopup {
+  width: 190px;
+  padding: 16px;
+  border-radius: 16px !important;
+
+  h2 {
+    font-size: 14px;
+    line-height: 17.5px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16.8px;
+    color: #64748b;
+  }
+}
+
+.popupLinks {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 0;
+    display: flex;
+    gap: 4px;
+  }
+
+  p {
+    color: #0038ff;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 130%;
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+}

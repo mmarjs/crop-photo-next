@@ -1,0 +1,67 @@
+.cropContainerSide {
+  // margin: auto;
+  // display: flex;
+  // width: 100%;
+  // text-align: right;
+  // margin-bottom: 10px;
+  // margin-bottom: 10px;
+  // border: 0.5px solid #d9dde1;
+  // box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  // border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #061425;
+}
+
+.inputBox {
+  width: 100%;
+  /* Elevation/100 */
+  font-size: 1rem;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 5px;
+  align-items: center;
+  border: 0.5px solid #D9DDE1;
+
+  input {
+    text-align: right;
+    padding-right: 0.75rem !important;
+  height: 2.25rem;
+
+  }
+
+  &:first-child {
+    margin-right: 0.5rem;
+  }
+
+  .prefixText {
+    margin-right: 1rem;
+    color: #626970;
+  }
+}
+
+// .inputBox {
+//   // width: 115px;
+//   height: 36px;
+//   margin-top: 0px;
+//   border: none !important;
+//   input {
+//     border: none !important;
+//     padding-right: 0px;
+//     text-align: right !important;
+//     padding: 0px !important;
+//   }
+//   .ant-input-group-addon {
+//     padding-left: 0px;
+//     text-align: right;
+//   }
+//   .ant-input-group-wrapper {
+//     margin-top: 0px;
+//     text-align: right;
+//   }
+// }

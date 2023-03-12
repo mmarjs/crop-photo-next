@@ -1,0 +1,15 @@
+{
+  "home": {
+    "home": "Heimat",
+    "start_automation": "Starten Sie eine Automatisierung",
+    "smart_crop": "Intelligente Ernte",
+    "smart_labels": "Intelligente Etiketten",
+    "smart_clip": "Intelligenter Clip",
+    "available": "erhältlich",
+    "coming_soon": "kommt bald",
+    "projects": "Projekte"
+  },
+  "billing": {
+    "billing": "Abrechnung"
+  }
+}

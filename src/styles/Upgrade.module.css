@@ -1,0 +1,211 @@
+
+ /* old billing page  */
+
+ .billingPageContainer {
+}
+
+.billingPageLeftContainer {
+  padding: 40px;
+}
+
+.billingPageHeaderContainer {
+  line-height: 34px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.billingPageDivider {
+  background: #d9dde1;
+  height: 1px;
+}
+
+.label {
+	font-weight: 600;
+	font-size: 16px;
+	/* top: 4px; */
+	position: relative;
+}
+
+.billingPageRightContainer {
+  padding: 40px;
+}
+
+.billingPageRightContainerBox {
+  border-radius: 8px;
+  width: 346px;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  padding: 24px;
+}
+
+.billingPageAmountContainer {
+  margin-bottom: 20px;
+}
+
+.billingPageAmountTitleContainer {
+}
+
+.amountDueTitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.iconColor2 {
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  left: 5px;
+  top: -2px;
+  position: relative;
+}
+
+.price {
+}
+
+.divider1 {
+  background: #eff1f3;
+  height: 1px;
+  margin-bottom: 24px;
+}
+
+.creditCardContainer {
+  margin-bottom: 24px;
+}
+
+.creditCardTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.noCardSetupTitle {
+}
+
+.billingPageOneTimePaymentContainer {
+  margin-bottom: 20px;
+}
+
+.billingPageOneTimePaymentInnerContainer {
+}
+
+.oneTimePaymentTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.oneTimePaymentDescription {
+  /* margin-bottom: 24px; */
+}
+
+.oneTimePaymentAction {
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 0.5px 1px #0614250d;
+  height: 46px;
+  background: #ffffff;
+  border: 0.5px solid #d9dde1;
+}
+
+.oneTimePaymentAction:hover {
+  background: #f3f4f5;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 8px;
+}
+
+.modalTitle {
+  font-weight: bold;
+  font-size: 26px;
+}
+.firstNameTitle {
+  width: 50%;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.lastNameTitle {
+  width: 50%;
+  margin: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+}
+.firstName {
+  margin: 5px;
+}
+.lastName {
+  margin: 5px;
+}
+.input {
+  height: 44px;
+}
+.saveButton {
+  padding: 10px 16px;
+  width: 100px;
+  height: 44px;
+  background: #032ec5;
+  border-radius: 8px;
+}
+.saveButton:hover {
+  box-shadow: 0px 2px 4px rgba(0, 56, 255, 0.16);
+}
+.cancelButton {
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  border: none;
+}
+.amount {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.amountInputField {
+  margin: 5px;
+}
+.checkbox {
+  margin: 5px;
+  font-size: 16px;
+  color: #061425;
+}
+.checkboxSubText {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #798088;
+}
+.billingPageAddCreditCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+
+  position: static;
+  width: 147px;
+  height: 44px;
+  left: 24px;
+  top: 126px;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.addCreditCardLabel {
+  font-weight: 600;
+  /*top: 4px;*/
+  font-size: 16px;
+  position: static;
+}
+.SkeletonContainer {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  border-radius: 8px;
+  margin-top: 16px;
+}

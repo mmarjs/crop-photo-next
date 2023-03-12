@@ -1,0 +1,30 @@
+.breadcrumbContainer {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.outerBreadcrumbContainer {
+  // padding: 22px;
+  width: 100%;
+  background: #ffffff;
+  // border-bottom: 1px solid #eff1f3;
+}
+.nextIcon {
+  // height: 12px;
+  // width: 6px;
+  margin: 0 1rem;
+}
+.breadcrumbValue{
+  // margin-right: 24px;
+  display: inline-block;
+  // cursor: pointer;
+}
+
+.breadcrumbValueRedirect{
+  // margin-right: 24px;
+  display: inline-block;
+  cursor: pointer;
+}

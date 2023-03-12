@@ -1,0 +1,265 @@
+.SummaryCardWrapper {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #eff1f3;
+  position: relative;
+
+  &.noPointerEvents {
+    pointer-events: none;
+  }
+
+  .croppedImageError {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    :global {
+      & .ant-result {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+      }
+      & .ant-result-icon {
+        margin-bottom: 0;
+      }
+
+      & .ant-result-icon > .anticon {
+        font-size: 40px;
+      }
+
+      & .ant-result-title {
+        font-size: 14px;
+      }
+    }
+  }
+  .ImageView {
+    position: relative;
+    height: 200px;
+    background-color: #eff1f3;
+    cursor: pointer;
+    // display: grid;
+    // place-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      background-size: 25px 25px; /* Must be a square */
+      background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+      // max-width: max-content;
+      // max-height: 200px;
+    }
+
+    .Mask {
+      position: absolute;
+      background: linear-gradient(
+        180deg,
+        rgba(6, 20, 37, 0.8) 0%,
+        rgba(6, 20, 37, 0.793082) 6.67%,
+        rgba(6, 20, 37, 0.771592) 13.33%,
+        rgba(6, 20, 37, 0.734672) 20%,
+        rgba(6, 20, 37, 0.682071) 26.67%,
+        rgba(6, 20, 37, 0.61458) 33.33%,
+        rgba(6, 20, 37, 0.534493) 40%,
+        rgba(6, 20, 37, 0.445847) 46.67%,
+        rgba(6, 20, 37, 0.354153) 53.33%,
+        rgba(6, 20, 37, 0.265507) 60%,
+        rgba(6, 20, 37, 0.18542) 66.67%,
+        rgba(6, 20, 37, 0.117929) 73.33%,
+        rgba(6, 20, 37, 0.0653279) 80%,
+        rgba(6, 20, 37, 0.028408) 86.67%,
+        rgba(6, 20, 37, 0.00691776) 93.33%,
+        rgba(6, 20, 37, 0) 100%
+      );
+      height: 42%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .Spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .Progress {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+  }
+
+  .ImageView {
+    :global {
+      & .ant-image {
+        height: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  .ContentView {
+    padding: 0.875rem 0.75rem 0.75rem 0.75rem;
+    background-color: white;
+
+    .Section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .ImageName {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+      }
+
+      .ImageWarning {
+        margin-right: 4px;
+        text-align: left;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 24px;
+        color: #626970;
+      }
+
+      &:last-child {
+        margin-top: 6px;
+      }
+
+      :global {
+        .ant-btn.ant-btn-text {
+          margin-left: auto;
+        }
+        .ant-skeleton {
+          margin: 4px 0;
+
+          .ant-skeleton-paragraph {
+            margin-bottom: 0;
+
+            li {
+              width: 100% !important;
+              height: 12px;
+            }
+          }
+
+          &:nth-child(1) {
+            margin-right: 4px;
+          }
+
+          &:nth-child(2) {
+            width: 24px;
+          }
+        }
+      }
+    }
+
+    .BottomSection {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      span {
+        font-size: 14px;
+        line-height: 24px;
+        color: #626970;
+      }
+    }
+
+    .BottomInfo {
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    svg {
+      min-width: 16px;
+    }
+
+    .MediaSize {
+      margin-right: 8px;
+    }
+
+    .ImageSize {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-left: auto;
+    }
+  }
+
+  .ShowMoreDropdown {
+    visibility: hidden;
+
+    svg {
+      transform: scale(0.8);
+    }
+  }
+
+  .SelectCheckbox {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: none;
+  }
+
+  &:hover {
+    .SelectCheckbox {
+      display: block;
+    }
+
+    .ShowMoreDropdown {
+      visibility: visible;
+    }
+  }
+
+  &.Selected {
+    border-color: #0038ff;
+
+    .SelectCheckbox {
+      display: block;
+    }
+
+    .ShowMoreDropdown {
+      visibility: visible;
+    }
+  }
+
+  .Spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .Hidden {
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "data": [
+    {
+      "plan_label": "Free",
+      "plan_id": "free",
+      "monthly_price": 0,
+      "yearly_price": 0,
+      "recommended": false,
+      "lines": [
+        {
+          "text": "Up to 10 free crops",
+          "tool_tip": "You will get 10 free crop including downloads."
+        },
+        {
+          "test": "Unlimited automations",
+          "tool_tip": "You can create unlimited automations."
+        },
+        {
+          "test": "Unlimited download",
+          "tool_tip": "Download your crop unlimited times."
+        },
+        {
+          "test": "Full access to Smart Crop",
+          "tool_tip": "Access all the features of Smart Crop without any restrictions."
+        },
+        {
+          "test": "7 days free storage",
+          "tool_tip": "You uploaded files will be detected after 7 days."
+        }
+      ]
+    },
+    {
+      "plan_name": "Essential",
+      "plan_id": "essential-1x",
+      "monthly_price": 25,
+      "yearly_price": 300,
+      "recommended": true,
+      "lines": [
+        {
+          "text": "Up to 100 crops",
+          "tool_tip": "You will get 100 free crop including downloads, afterwards $0.25 per crop."
+        },
+        {
+          "test": "$0.25 per crop after limit",
+          "tool_tip": "$0.25 per crop after limit"
+        },
+        {
+          "test": "Unlimited automations",
+          "tool_tip": "Unlimited automations. Unlimited automations. Unlimited automations"
+        },
+        {
+          "test": "Unlimited downloads",
+          "tool_tip": "Unlimited downloads. Unlimited downloads. Unlimited downloads"
+        },
+        {
+          "test": "Full access to Smart Crop",
+          "tool_tip": "Full access to Smart Crop. Full access to Smart Crop. Full access to Smart Crop"
+        },
+        {
+          "test": "6 months free storage",
+          "tool_tip": "6 months free storage. 6 months free storage. 6 months free storage"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+.Stepper {
+  color: #FAFAFB;
+  display: flex;
+  justify-content: center;
+  width: calc(100% + 48px);
+  height: 96px;
+  background-color: #FAFAFB;
+  margin: 0 -24px 8px;
+  padding-top: 34px;
+}
+
+.S3SettingForm {
+  margin-top: 16px;
+
+  .InfoS3Link {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    color: #626970;
+  }
+}
+
+.ReviewForm {
+  margin-top: 16px;
+
+  .SummaryTitle {
+    font-size: 18px;
+    line-height: 26px;
+    color: #061425;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .SummaryDescription {
+    font-size: 16px;
+    line-height: 24px;
+    color: #061425;
+    margin: 0;
+  }
+
+  .FieldLabel {
+    font-size: 12px;
+    line-height: 18px;
+    color: #626970;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .FieldValue {
+    font-size: 14px;
+    line-height: 20px;
+    color: #061425;
+    margin: 0;
+  }
+}

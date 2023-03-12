@@ -1,0 +1,87 @@
+version: 0.2
+
+#
+# AWS CodeBuild spec, to build locally on your desktop use one of these -
+#  codebuild_build.sh -c -b ./buildspec-webserver.yml  -i public.ecr.aws/k8x9x6i3/evolphin-pico/aws-codebuild-env:1.0  -a ../out/ 
+#  codebuild_build.sh -c -p $AWS_DEFAULT_PROFILE  -b ./buildspec-webserver.yml  -i public.ecr.aws/k8x9x6i3/evolphin-pico/aws-codebuild-env:1.0  -a ../out/ -e /tmp/code.env
+env:
+  variables:
+    CI: "true"
+phases:
+  install:
+     on-failure: ABORT
+     commands:
+      # JDK 17 is on the path in the amazoncorretto:17 docker image
+      - echo  `npm --version`
+      - echo  `node --version`
+      - echo Starting the Docker daemon...
+      - /usr/local/bin/dockerd-entrypoint.sh
+  
+  pre_build:
+    commands:
+      - echo Pre-build phase started
+      # Script below will return [daisy, dev, beta, prod, unknown] based on branch name [Development/Daisy, Deployment/Dev, Deployment/Staging, Deployment/Prod, *any thing else*]
+      # unless upstream CodeBuild BUILD_ENV is already set
+      - git branch --show-current
+      - export BUILD_ENV=${BUILD_ENV:-$(scripts/aws/codebuild/branch-abbrev.sh)}
+      - export AWS_CODEBUILD_VERSION="${BUILD_ENV}-$(git describe --tags --dirty --broken --match v*)"
+      - echo Build version .. $AWS_CODEBUILD_VERSION
+      - |-
+         if [[ $IS_CLOUD_BUILD == "true"  && ($BUILD_ENV == "daisy" || $BUILD_ENV == "dev" || $BUILD_ENV == "beta" || $BUILD_ENV == "prod") ]]; then
+          AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
+          echo REPOSITORY_URI is $REPOSITORY_URI
+          aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin $REPOSITORY_URI
+         fi
+  build:
+    commands:      
+      - echo Build started on $(date) in $(pwd)
+      - echo "CODEBUILD_SRC_DIR=$CODEBUILD_SRC_DIR"
+      - echo "IS_CLOUD_BUILD=$IS_CLOUD_BUILD"
+      - echo "BUILD_ENV=$BUILD_ENV"
+      - echo "AWS_CODEBUILD_VERSION=$AWS_CODEBUILD_VERSION"
+      - docker build --build-arg AWS_CODEBUILD_VERSION=$AWS_CODEBUILD_VERSION --label org.label-schema.version=$AWS_CODEBUILD_VERSION -t pico/pico-frontend:$AWS_CODEBUILD_VERSION .
+      # Remove any dangling images with name:tag none left behind if we rebuild with the same name:tag again locally
+      - docker images -q --filter=dangling=true | xargs -r docker rmi || true
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - |-
+        if [[ $IS_CLOUD_BUILD == "true" && ($BUILD_ENV == "daisy" || $BUILD_ENV == "dev" || $BUILD_ENV == "beta" || $BUILD_ENV == "prod") ]]; then
+          echo Build is created in the cloud. Docker image will be pushed to ECR ..
+          docker tag pico/pico-frontend:$AWS_CODEBUILD_VERSION $REPOSITORY_URI/pico/pico-frontend:$AWS_CODEBUILD_VERSION
+          docker tag pico/pico-frontend:$AWS_CODEBUILD_VERSION $REPOSITORY_URI/pico/pico-frontend:latest
+          docker tag pico/pico-frontend:$AWS_CODEBUILD_VERSION $REPOSITORY_URI/pico/pico-frontend:$BUILD_ENV
+          echo docker push $REPOSITORY_URI/pico/pico-frontend:$AWS_CODEBUILD_VERSION ..
+          docker push $REPOSITORY_URI/pico/pico-frontend:$AWS_CODEBUILD_VERSION
+          docker push $REPOSITORY_URI/pico/pico-frontend:latest
+          docker push $REPOSITORY_URI/pico/pico-frontend:$BUILD_ENV
+          echo docker push $REPOSITORY_URI/pico/pico-frontend:$AWS_CODEBUILD_VERSION .. [DONE]
+        fi
+      - |
+    finally:
+      - rm -rf /root/.npm
+      -
+
+# Om TODO cleanup:
+# artifacts:
+#    # end up in S3 output bucket configured with CodeBuild
+#    files:
+#     - 'libs/pico-server-*.jar'
+#    base-directory: 'webserver/build'
+# cache:
+#    paths:
+#     - '/root/.gradle/caches/**/*' 
+#     - '/root/.gradle/wrapper/**/*'
+# reports:
+#   junit-web-server-reports:
+#     files:
+#       - "**/TEST-*.xml"
+#     base-directory: 'webserver/build/test-results'
+#     file-format: JUNITXML
+#     discard-paths: no
+#   jacoco-report:
+#     files:
+#       - '**/jacocoTestReport.xml'
+#     file-format: 'JACOCOXML'

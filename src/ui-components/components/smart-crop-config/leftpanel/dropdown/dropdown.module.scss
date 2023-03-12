@@ -1,0 +1,60 @@
+.inputBox {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.inputBox:hover {
+  color: #000 Im !important;
+}
+
+.inputBoxDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.inputBoxLink {
+  float: right;
+  text-align: right;
+}
+.inputBoxLabelDiv {
+  width: 100%;
+}
+.outerLabel {
+}
+.labelWithLink {
+  position: relative;
+  top: 7px;
+}
+.dropdownButton {
+  text-align: left;
+  height: 36px;
+  width: 100%;
+  min-width: 80px;
+  background: #ffffff;
+  color: #000;
+
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 5px;
+}
+.dropdownButton:focus {
+  border: 1.5px solid #5177fa !important;
+}
+.dropdownButton:hover {
+  border: 1.5px solid #5177fa !important;
+  color: #000;
+}
+.dropDownIcon {
+  position: absolute !important;
+  right: 12px;
+  top: 35%;
+}
+
+.menuOption {
+  color: #000;
+  height: 32px;
+}
+
+.menuOption:hover {
+  color: #000 !important;
+}

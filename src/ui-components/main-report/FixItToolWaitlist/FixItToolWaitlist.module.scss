@@ -1,0 +1,128 @@
+.FixItToolWaitlist {
+  top: -35%;
+  left: 0;
+  position: absolute;
+  background: url("/images/blur.png") no-repeat;
+  background-size: cover;
+  border: 1px solid #ffffff;
+  box-shadow: 8px 20px 80px rgba(136, 146, 182, 0.16);
+  border-radius: 24px;
+  width: 100%;
+  height: 346px;
+  height: fit-content;
+  padding: 70px 0;
+  place-items: center;
+  z-index: 100;
+  border: 1px solid #e2e8f0;
+  display: none;
+
+  & .fixItToolHeading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+
+    & .gradientBlueText {
+      margin-left: 8px;
+      background: -webkit-linear-gradient(#43baf9, #437cf1);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  & .fixItToolDesc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #475569;
+    margin-bottom: 24px;
+  }
+
+  & .fixItToolInput {
+    width: 580px;
+  }
+
+  & .fixItPreview {
+    background: url("/images/preview-bg.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    position: relative;
+    width: 361px;
+  }
+
+  & .fixItPreviewImage {
+    filter: blur(1px);
+    width: 249px;
+  }
+
+  & .fixItPreviewInner {
+    position: relative;
+    background: url("/images/fix-it-preview.png") no-repeat;
+    background-size: contain;
+    height: 249px;
+    width: 249px;
+    display: grid;
+    place-items: center;
+    border: 1px dashed #000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50%;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      border-right: 1px dashed #000;
+    }
+  }
+
+  & .fixItWand {
+    position: absolute;
+    top: -40px;
+    left: -110px;
+    z-index: 1000;
+  }
+
+  & .fixItPreviewButton {
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+    background: rgba(248, 250, 252, 0.5) !important;
+    backdrop-filter: blur(4px);
+    width: 90px;
+    height: 26px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: none;
+    padding: 0;
+
+    span {
+      background: linear-gradient(212.91deg, #42ccfb 17.96%, #4361ee 82.04%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 58px 48px 75px;
+    column-gap: 100px;
+  }
+}

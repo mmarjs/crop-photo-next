@@ -1,0 +1,42 @@
+.Wrapper {
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #061425;
+  }
+
+  :global {
+    .ant-radio-group {
+      background-color: #f3f4f5;
+      box-shadow: 0px 0.5px 1px rgb(6 20 37 / 5%);
+      border-radius: 10px;
+      height: 44px;
+      padding: 2px;
+      width: 100%;
+
+      .ant-radio-button-wrapper {
+        height: 100%;
+        background: transparent;
+        border: none;
+        color: #061425;
+        font-weight: 600;
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+
+        &.ant-radio-button-wrapper-checked {
+          background-color: #ffffff;
+          box-shadow: 0px 0px 2px rgb(6 20 37 / 16%), 0px 1px 2px rgb(6 20 37 / 12%);
+          border-radius: 8px;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.ShowError {
+  color: #ec1609;
+  font-weight: 400;
+}
+
+.HideError {
+  visibility: hidden;
+  height: 1.5rem;
+}
+
+.inputBox {
+  max-width: 42px;
+
+  :global {
+    input {
+      text-align: center;
+
+      &:disabled {
+        border: 1px solid #eff1f3;
+        background: #f3f4f5;
+      }
+    }
+  }
+
+  &.Small {
+    max-width: 36px;
+  }
+}
+
+.LoadingIcon {
+  max-width: 16px;
+  height: 16px;
+  color: #0038ff;
+}
+
+.SubmittedIcon {
+  color: #0038ff;
+}
+
+.resendLink {
+  color: #0038ff;
+  font-weight: 400 !important;
+  margin-bottom: 40px !important;
+  margin-top: 8px !important;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+
+  &:active {
+    background: transparent !important;
+  }
+}
+
+.resendTimer {
+  color: #061425;
+  font-weight: 600 !important;
+  margin-bottom: 40px !important;
+  margin-top: 8px !important;
+}

@@ -1,0 +1,131 @@
+.userPanel {
+  margin-left: 10px;
+  //bottom: 0;
+  //width: 100%;
+  //position: absolute;
+  //.userProfile {
+  //  margin-top: 16px;
+  //  margin-right: 12px;
+  //  margin-left: 12px;
+  //  margin-bottom: 16px;
+  //  display: flex;
+  //  height: 48px;
+  //  background: #ffffff;
+  //  flex: 1;
+  //  border-radius: 8px;
+  //  align-items: center;
+  //  &:hover {
+  //    cursor: pointer;
+  //  }
+  //  &.userProfileHighlight:hover {
+  //    background: #eff1f3;
+  //  }
+  //}
+  //[ant-click-animating-without-extra-node="true"]::after {
+  //  display: none;
+  //}
+  //.userName {
+  //  // margin: auto;
+  //  margin-left: 0.75rem;
+  //  height: 32px;
+  //  width: 32px;
+  //  text-align: center;
+  //  background-color: #f0f8fe;
+  //  border-radius: 50%;
+  //  display: flex;
+  //  align-items: center;
+  //  span {
+  //    margin: auto;
+  //    font-size: 16px;
+  //    font-weight: 600;
+  //    //width: 32px;
+  //  }
+  //}
+  //.dividerContainer {
+  //  padding: 0 1.5rem;
+  //}
+  //.divider {
+  //  margin: 0;
+  //}
+  //.billing {
+  //  font-weight: 600;
+  //  font-size: 1rem;
+  //  line-height: 1.5rem;
+  //  border: none;
+  //  box-shadow: none !important;
+  //  border: none !important;
+  //  width: 100%;
+  //  justify-content: flex-start !important;
+  //  &:hover {
+  //    color: #061425;
+  //    background: #eff1f3 !important;
+  //  }
+  //  &:focus {
+  //    background-color: #d9dde1;
+  //    border-color: #d9dde1;
+  //  }
+  //  img {
+  //    margin-left: 0.75rem;
+  //    margin-right: 0.5rem;
+  //  }
+  //}
+  //.userOptions {
+  //  margin-bottom: 1.4rem;
+  //}
+  //
+  //.profileIcon,
+  //.settingIcon {
+  //  margin: auto;
+  //  border: none !important;
+  //  box-shadow: none !important;
+  //  font-weight: 600;
+  //  font-size: 16px;
+  //  line-height: 24px;
+  //  margin-right: 1rem;
+  //  background-color: transparent !important;
+  //  :active {
+  //    box-shadow: none !important;
+  //    border: none !important;
+  //  }
+  //  &:active,
+  //  &:hover,
+  //  &:focus {
+  //    color: #061425;
+  //    background-color: transparent !important;
+  //  }
+  //}
+  //
+  //.profileIcon {
+  //  margin-right: 0;
+  //  overflow: hidden;
+  //  max-width: 130px;
+  //  padding-right: 0;
+  //  //cursor: text;
+  //  span {
+  //    white-space: nowrap;
+  //    overflow: hidden;
+  //    text-overflow: ellipsis;
+  //    max-width: 115px;
+  //  }
+  //  img {
+  //    //margin-right: 10px;
+  //  }
+  //}
+  //.settingIcon.selected {
+  //  border: 2px solid #0038ff !important;
+  //  background: #eff1f3 !important;
+  //  border-radius: 8px;
+  //
+  //  &:hover ~ .userPanel:hover {
+  //    background: none !important;
+  //  }
+  //}
+
+  .firstNameLabel span {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 7rem;
+    text-align: left;
+  }
+}

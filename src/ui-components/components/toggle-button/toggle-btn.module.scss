@@ -1,0 +1,28 @@
+.Wrapper {
+  font-size: 16px;
+  line-height: 24px;
+  color: #061425;
+  display: flex;
+  align-items: center;
+
+  :global {
+    .ant-switch {
+      min-width: 32px;
+      height: 18px;
+      margin-right: 10px;
+
+      .ant-switch-handle {
+        width: 14px;
+        height: 14px;
+      }
+
+      &.ant-switch-checked {
+        background-color: #0038ff;
+
+        .ant-switch-handle {
+          left: calc(100% - 14px - 2px);
+        }
+      }
+    }
+  }
+}

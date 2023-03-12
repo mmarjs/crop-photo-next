@@ -1,0 +1,93 @@
+.footerWrapper {
+  bottom: 0px;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #eff1f3;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  padding: 0rem 1.5rem;
+}
+
+.zoomSliderContainer {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+}
+
+.zoomslider {
+  min-width: 120px;
+}
+.zoomsliderText {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 5px;
+  min-width: 40px;
+}
+
+.textContainer {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #061425;
+}
+
+.markerDropdown {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.nextPrevButtonContainer {
+  display: flex;
+}
+
+.nextPrevButton {
+  background: #ffffff;
+  border: 0.5px solid #d9dde1;
+  box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+  border-radius: 8px;
+  margin: 8px;
+}
+
+.ArrowButtons {
+  display: flex;
+  button:first-child {
+    margin-right: 8px;
+  }
+}
+
+.sliderWrapper {
+  width: 160px;
+}
+
+.dropdown {
+  width: 6.25rem;
+  :global {
+    .ant-select-selector {
+      box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+      border-radius: 5px !important ;
+    }
+    
+  }
+}
+
+.dropdownList{
+  :global {
+    .ant-select-item-option {
+      margin: 1px 6px;
+      // background: #f0f8fe;
+      border-radius: 6px;
+    }
+    .ant-select-item-option-active{
+      background: #f0f8fe;
+    }
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+      background: #f0f8fe;
+    }
+    
+  }
+}

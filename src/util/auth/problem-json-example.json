@@ -1,0 +1,6 @@
+{
+  "status": 401,
+  "type": "/exception/client_error/unauthorized",
+  "title": "Missing tenant id in the request: /api/secured/roles-allowed",
+  "detail": "Missing tenant id in the request: /api/secured/roles-allowed"
+}

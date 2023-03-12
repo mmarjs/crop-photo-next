@@ -1,0 +1,92 @@
+.Hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  flex-direction: column;
+  max-width: 1011px;
+  margin: auto;
+  margin-bottom: 6px;
+
+  & .heroTitle {
+    font-size: 48px;
+    line-height: 52.8px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #061425;
+    margin-bottom: 8px;
+    gap: 10px;
+  }
+
+  & .heroDesc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #64748b;
+    text-align: center;
+  }
+
+  & .gradientText {
+    background: -webkit-linear-gradient(#f72585, #fc7932);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .errorText {
+    background: -webkit-linear-gradient(#f72585, #fc7932);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    line-height: 52.8px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #64748b;
+    margin-bottom: 48px;
+  }
+
+  & .uploadLink {
+    color: #133afd;
+    text-decoration: underline;
+  }
+
+  & .errorMessage {
+    color: rgba(255, 39, 39, 1);
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 70vw;
+
+    h1 {
+      font-size: 40px;
+      line-height: 42.8px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 62px;
+
+    & .errorText {
+      font-size: 48px;
+    }
+  }
+}

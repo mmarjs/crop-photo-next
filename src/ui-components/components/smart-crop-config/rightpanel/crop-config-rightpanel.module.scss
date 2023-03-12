@@ -1,0 +1,11 @@
+.wrapper {
+  max-width: calc(100vw - 360px);
+  min-width: calc(100vw - 360px);
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .ant-btn:focus > span {
+    position: unset !important;
+  }
+}

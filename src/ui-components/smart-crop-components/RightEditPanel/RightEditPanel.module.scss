@@ -1,0 +1,63 @@
+.image {
+    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+      linear-gradient(135deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%),
+      linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 25px 25px;
+    background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
+  }
+
+.previewImage{
+    max-height: 100%;
+    max-width: 90%;
+    object-fit: contain;
+    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+      linear-gradient(135deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%),
+      linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 25px 25px; /* Must be a square */
+    background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px; /* Must be half of one side of the square */
+}
+
+.imageWrapper{
+  // flex: 1;
+  overflow: auto;
+  // background: #999;
+  background: #F7F8FC;
+  // justify-content: center;
+  display: inline-flex;
+  // align-items: center;
+  position: relative;
+  height: calc(100% - 70px);
+  width: 100%;
+  flex: 1;
+  .rmc-icon-container {
+    display: none !important;
+  }
+  // background-image: linear-gradient(45deg,
+  //                     #ccc 25%,
+  //                     transparent 25%,
+  //                     transparent 75%,
+  //                     #ccc 75%),
+  //                   linear-gradient(45deg,
+  //                     #ccc 25%,
+  //                     transparent 25%,
+  //                     transparent 75%,
+  //                     #ccc 75%);
+  // background-position: 0 0, 20px 20px;
+  // background-size: 40px 40px;
+}
+
+.transparentBG {
+  background-image: linear-gradient(45deg,
+                      #ccc 25%,
+                      transparent 25%,
+                      transparent 75%,
+                      #ccc 75%),
+                    linear-gradient(45deg,
+                      #ccc 25%,
+                      transparent 25%,
+                      transparent 75%,
+                      #ccc 75%);
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+}
+  

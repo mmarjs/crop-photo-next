@@ -1,0 +1,784 @@
+.DetailedReportAccordions {
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  margin-bottom: 40px;
+
+  & .innerReportPanelHowToText {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fc7932;
+  }
+
+  & .parentPanelRate {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #64748b;
+    position: relative;
+
+    &.panelIncreaseRate {
+      color: #00b047;
+    }
+
+    &.panelIncreaseRate:before {
+      content: "+";
+      display: inline-block;
+    }
+
+    &.panelIncreaseRate:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -30px;
+      background: url("/images/arrow-up-circle.svg") no-repeat;
+      background-size: cover;
+      top: -1px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &.panelDecreaseRate {
+      color: #f82627;
+    }
+
+    &.panelDecreaseRate:before {
+      content: "-";
+      display: inline-block;
+    }
+
+    &.panelNeutralRate {
+      color: #64748b;
+    }
+
+    &.panelNeutralRate:before {
+      content: "+";
+      display: inline-block;
+    }
+
+    &.panelNeutralRate:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -30px;
+      background: url("/images/neutral-rate.svg") no-repeat;
+      background-size: cover;
+      top: -3px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .panelIncreaseLabel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 0;
+    color: #1e293b;
+  }
+
+  & .detailedReportPanelHeader,
+  & .innerReportPanelHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  & .detailedReportPanelTitle,
+  & .innerReportPanelTitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  & .detailedReportPanelTitle span {
+    font-size: 18px;
+  }
+
+  & .innerReportPanelTitle span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  & .innerReportPanelTitle .successTitle {
+    color: #5c697b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & .detailedReportPanelImproveContent {
+    margin-left: 42.5px;
+    font-size: 16px;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  & .innerReportPanelImproveLabel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #64748b;
+    width: 100%;
+  }
+
+  & .innerTabDetailsCount {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background: #f2f5ff;
+    border-radius: 80px;
+  }
+
+  & .innerReportPanelContentContainer div:first-child {
+    position: relative;
+    border-bottom: 1px solid #d9dfe6;
+  }
+
+  & .innerReportPanelContentContainer > div {
+    padding: 0 12px;
+  }
+
+  & .innerReportPanelContentContainer,
+  & .innerReportPanelEmptyDetails {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  & .innerReportPanelDescTitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #061425;
+  }
+
+  & .innerReportPanelDescription {
+    font-size: 14px;
+  }
+
+  & .innerReportPanelHowToContainer {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  & .detailedReportPanelImproveContent {
+    display: flex;
+    gap: 8px;
+  }
+
+  & .imageReportButton {
+    width: 97px;
+    max-width: 100%;
+    height: 44px;
+    padding: 12px 16px 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #ffffff;
+    border: 0.5px solid #d9dde1;
+    box-shadow: 0px 0.5px 1px rgba(6, 20, 37, 0.05);
+    border-radius: 80px;
+    font-size: 14px;
+
+    // &:not(.ant-btn-primary):not(.ant-btn-text):not(.ant-btn-dangerous):focus {
+    //   background: #d9dde1;
+    //   border: 0.5px solid #d9dde1 !important;
+    // }
+
+    &:hover {
+      border: 0.5px solid #d9dde1;
+    }
+
+    &:disabled {
+      background-color: transparent !important;
+      border: 0.5px solid #d9dde1 !important;
+      filter: drop-shadow(0px 0.5px 1px rgba(6, 20, 37, 0.05)) !important ;
+      border-radius: 80px;
+      color: #5c697b;
+      cursor: not-allowed;
+    }
+  }
+
+  & .leftImageReportButton {
+    padding: 12px 20px 12px 16px;
+  }
+
+  :global {
+    & .ant-collapse {
+      margin-top: 0;
+      background-color: #f8fafc;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      border-radius: 16px;
+      gap: 16px;
+
+      &.innerCollapse {
+        gap: 0;
+      }
+    }
+
+    .ant-collapse-header {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 120%;
+      background: #fff;
+      padding: 24px;
+      width: 100%;
+    }
+
+    & .innerCollapse.ant-collapse .ant-collapse-header {
+      padding: 0 24px;
+      background: #f7f8fc;
+    }
+
+    & .ant-collapse-content {
+      border-radius: 0;
+    }
+
+    & .innerCollapse .ant-collapse-content {
+      padding-left: 0;
+    }
+
+    & .ant-collapse-content-box {
+      border-radius: 8px;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    & .ant-tabs-nav {
+      margin-bottom: 24px;
+      padding-left: 16px;
+    }
+
+    .ant-collapse > .ant-collapse-item.ant-collapse-item-active .ant-collapse-content {
+      border-top: none;
+    }
+
+    .ant-collapse > .ant-collapse-item {
+      border-bottom: none;
+      padding-bottom: 0;
+      box-shadow: 4px 4px 16px rgba(136, 146, 182, 0.04);
+    }
+
+    .ant-collapse > .ant-collapse-item:last-child {
+      padding: 0;
+    }
+
+    .ant-collapse > .ant-collapse-item.ant-collapse-item-active .ant-collapse-header {
+      border-radius: 0;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .ant-collapse-item:last-child .ant-collapse-content {
+      border-top: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    & .innerCollapse.ant-collapse > .ant-collapse-item .ant-collapse-header {
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+      padding-left: 16px;
+    }
+
+    .innerCollapse.ant-collapse .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow.innerPanelExpandIcon {
+      padding-right: 0;
+    }
+
+    & .ant-tabs-ink-bar {
+      background: #1338ff;
+      height: 4px !important;
+    }
+
+    & .ant-tabs-tab .ant-tabs-tab-btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #64748b;
+      text-shadow: none;
+
+      p {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 0;
+        align-items: center;
+      }
+
+      .innerTabDetailsCount {
+        width: 24px;
+        height: 24px;
+        background: #f8fafc;
+        border-radius: 80px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: #64748b;
+        display: grid;
+        place-items: center;
+      }
+    }
+
+    & .ant-tabs-tab .ant-tabs-tab-btn {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    & .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      font-weight: 700;
+      color: #1e293b;
+      text-shadow: none;
+    }
+
+    & .ant-tabs-tab.ant-tabs-tab-active .innerTabDetailsCount {
+      background: rgba(0, 56, 255, 0.05);
+      color: #0038ff;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    //inner
+    .innerCollapse .ant-collapse-item {
+      border-bottom: none;
+      gap: 0;
+    }
+
+    .innerCollapse .ant-collapse-item .ant-collapse-header {
+      padding: 24px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .innerCollapse .ant-collapse-item:last-child .ant-collapse-header {
+      border-bottom: none;
+    }
+
+    .innerCollapse .ant-collapse-item.ant-collapse-item-active .ant-collapse-header {
+      border-bottom: none;
+    }
+
+    .innerCollapse .ant-collapse-content .ant-collapse-content-box {
+      padding: 20px 0;
+    }
+  }
+
+  & .innerReportPanelRate {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  & .innerReportPanelIncreaseRate {
+    color: #00b047;
+    position: relative;
+    margin-left: 40px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -30px;
+      background: url("/images/arrow-up-circle.png") no-repeat;
+      background-size: cover;
+      top: -3px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .innerReportPanelNeutralRate {
+    color: #64748b;
+    position: relative;
+    margin-left: 40px;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: -30px;
+      background: url("/images/neutral-rate.svg") no-repeat;
+      background-size: cover;
+      top: -5px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .innerReportPanelNegativeRate {
+    color: #f85152;
+  }
+
+  & .detailedReportNavigation {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  & .mainImageCard {
+    background: #ffffff;
+    border: 1px solid #e9ebf4;
+    box-shadow: 4px 4px 16px rgba(136, 146, 182, 0.04);
+    border-radius: 16px;
+    padding: 24px;
+    min-height: 120px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 24px 40px;
+  }
+
+  & .mainImageCardTitle {
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 17.5px;
+    font-weight: 300;
+  }
+
+  & .mainImageText {
+    font-weight: 700;
+  }
+
+  & .totalScoreDesc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0038ff;
+  }
+
+  & .mainImageCardLeft {
+    text-align: center;
+  }
+
+  & .mainImageCardRight {
+    text-align: center;
+  }
+
+  & .mainImageScoreChangeText {
+    color: #5c697b;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & .mainImageScore {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 12px;
+  }
+
+  & .mainImageScoreChange {
+    margin-left: 40px;
+    position: relative;
+    color: #00b047;
+  }
+
+  & .mainImageScoreChangeText {
+    margin-bottom: 0;
+  }
+
+  & .mainImageScoreChange:before {
+    content: "+";
+    display: inline-block;
+  }
+
+  & .mainImageScoreChange:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -25px;
+    background: url("/images/increase_arrow.svg") no-repeat;
+    background-size: cover;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 0;
+    padding: 40px 24px 0;
+
+    & .parentPanelRate {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 96px;
+
+    & .innerReportPanelContentContainer div:first-child {
+      position: relative;
+      border-right: 1px solid #d9dfe6;
+      border-bottom: none;
+    }
+
+    & .innerReportPanelHowToText {
+      background: -webkit-linear-gradient(#f72585, #fc7932);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & .parentPanelRate {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    & .imageReportButton {
+      width: 188px;
+      height: 44px;
+    }
+
+    & .leftImageReportButton {
+      width: 213px;
+    }
+
+    :global {
+      .ant-collapse {
+        gap: 32px;
+      }
+
+      .ant-collapse-header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        background: #fff;
+        border-radius: 16px;
+        width: 100%;
+      }
+
+      .ant-collapse > .ant-collapse-item .ant-collapse-header {
+        padding: 24px;
+        padding-right: 50px;
+      }
+
+      & .ant-collapse {
+        background-color: transparent;
+      }
+
+      & .ant-collapse.innerCollapse {
+        gap: 0;
+        padding-right: 0;
+
+        & .ant-collapse-header {
+          padding: 10px 24px;
+          height: 54px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      & .ant-tabs-nav-wrap {
+        padding: 0 24px;
+      }
+
+      & .ant-collapse-content-box {
+        padding: 0;
+        border-radius: 8px;
+      }
+
+      & .innerCollapse.ant-collapse .ant-collapse-content-box {
+        padding: 0;
+      }
+
+      .ant-collapse-content {
+        border-top: none;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+
+      // & .parentCollapse.ant-collapse .ant-tabs-nav {
+      //   margin-bottom: 16px;
+      // }
+
+      & .parentCollapse.ant-collapse .ant-collapse-item > .ant-collapse-header {
+        border: 1px solid #e2e8f0;
+      }
+
+      & .parentCollapse.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-content,
+      & .parentCollapse.ant-collapse > .ant-collapse-item:last-child,
+      & .parentCollapse.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header {
+        border-radius: 16px;
+      }
+
+      & .parentCollapse.ant-collapse > .ant-collapse-item.ant-collapse-item-active > .ant-collapse-header {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+      }
+
+      & .innerCollapse.ant-collapse > .ant-collapse-item:last-child {
+        padding-bottom: 24px !important;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+
+      & .innerCollapse.ant-collapse > .ant-collapse-item:last-child.ant-collapse-item-active {
+        padding-bottom: 0 !important;
+      }
+
+      & .innerCollapse.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+        border: none;
+        border-bottom: 1px solid #e2e8f0;
+        border-top: none !important;
+        background: #f7f8fc;
+      }
+
+      & .parentCollapse.ant-collapse > .ant-collapse-item.ant-collapse-item-active > .ant-collapse-content {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border: 1px solid #e2e8f0;
+        border-top: none;
+      }
+
+      & .innerCollapse .ant-collapse-item:last-child .ant-collapse-content {
+        border-top: none;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+      }
+
+      &
+        .ant-collapse-icon-position-right
+        > .ant-collapse-item
+        > .ant-collapse-header
+        .ant-collapse-arrow.parentPanelExpandedIcon {
+        right: 24px !important;
+      }
+
+      &
+        .ant-collapse-icon-position-right
+        > .ant-collapse-item
+        > .ant-collapse-header
+        .ant-collapse-arrow.innerPanelExpandIcon {
+        right: 24px;
+      }
+    }
+
+    & .detailedReportPanelImproveContent {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    & .detailedReportPanelHeader,
+    & .innerReportPanelHeader {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 16px;
+      width: 100%;
+    }
+
+    & .detailedReportPanelTitle,
+    & .innerReportPanelTitle {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    & .innerReportPanelTitle span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    & .innerReportPanelImproveLabel {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      width: unset;
+      min-width: 300px;
+      text-align: right;
+    }
+
+    & .innerReportPanelContentContainer,
+    & .innerReportPanelEmptyDetails {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      padding: 32px;
+      border-radius: 0;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+
+    & .innerReportPanelDescription {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #1e293b;
+    }
+
+    & .innerReportPanelHowToContainer {
+      padding: 16px;
+      border-radius: 16px;
+    }
+
+    & .innerReportPanelHowToClipboard {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    & .innerReportPanelHowToDesc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    & .innerReportPanelHeader {
+      padding-right: 36px;
+    }
+
+    & .detailedReportNavigation {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+      padding: 0;
+    }
+
+    & .mainImageCard {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 120px;
+      min-height: unset;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    & .mainImageCardLeft {
+      text-align: left;
+    }
+
+    & .mainImageCardRight {
+      text-align: right;
+    }
+  }
+}
